@@ -14,4 +14,3 @@ namespace TestingAzureCerberus
 		public bool Complete { get; set; }
 	}
 }
-
