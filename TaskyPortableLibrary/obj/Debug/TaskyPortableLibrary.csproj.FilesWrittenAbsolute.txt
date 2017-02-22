@@ -1,0 +1,7 @@
+/Users/Pepe/Downloads/TaskyPortable/TaskyPortableLibrary/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/Pepe/Downloads/TaskyPortable/TaskyPortableLibrary/bin/Debug/TaskyPortableLibrary.dll.mdb
+/Users/Pepe/Downloads/TaskyPortable/TaskyPortableLibrary/bin/Debug/TaskyPortableLibrary.dll
+/Users/Pepe/Downloads/TaskyPortable/TaskyPortableLibrary/obj/Debug/TaskyPortableLibrary.dll
+/Users/Pepe/Downloads/TaskyPortable/TaskyPortableLibrary/obj/Debug/TaskyPortableLibrary.dll.mdb
+/Users/Pepe/Downloads/TaskyPortable/TaskyPortableLibrary/bin/Debug/SQLitePCL.raw.dll
+/Users/Pepe/Downloads/TaskyPortable/TaskyPortableLibrary/bin/Debug/SQLite-net.dll
