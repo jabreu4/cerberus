@@ -99,12 +99,12 @@
     <Folder Include="Resources\drawable-ldpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\TaskyPortableLibrary\TaskyPortableLibrary.csproj">
+    <ProjectReference Include="..\TaskyPortableLibrary\CerberusPortableLibrary.csproj">
       <Project>{6611D648-7464-4266-AC13-EB93935B9AD6}</Project>
-      <Name>TaskyPortableLibrary</Name>
+      <Name>CerberusPortableLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\SQLitePCL.raw_basic.0.8.6\build\MonoAndroid\SQLitePCL.raw_basic.targets" Condition="Exists('..\packages\SQLitePCL.raw_basic.0.8.6\build\MonoAndroid\SQLitePCL.raw_basic.targets')" />
 </Project>

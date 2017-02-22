@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerberusiOS", "TaskyiOS\Cer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerberusAndroid", "TaskyAndroid\CerberusAndroid.csproj", "{82F04C1E-2F0D-4396-ADC3-BC9EADEE8E7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskyPortableLibrary", "TaskyPortableLibrary\TaskyPortableLibrary.csproj", "{6611D648-7464-4266-AC13-EB93935B9AD6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerberusPortableLibrary", "TaskyPortableLibrary\CerberusPortableLibrary.csproj", "{6611D648-7464-4266-AC13-EB93935B9AD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,3 +8,13 @@
 /Users/Pepe/Desktop/ProjectCerberus-master/TaskyPortableLibrary/bin/Debug/SQLitePCLRaw.batteries_green.dll
 /Users/Pepe/Desktop/ProjectCerberus-master/TaskyPortableLibrary/bin/Debug/SQLitePCLRaw.batteries_v2.dll
 /Users/Pepe/Desktop/ProjectCerberus-master/TaskyPortableLibrary/bin/Debug/SQLite-net.dll
+/Users/Pepe/Desktop/ProjectCerberusTEMP/TaskyPortableLibrary/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/Pepe/Desktop/ProjectCerberusTEMP/TaskyPortableLibrary/bin/Debug/CerberusPortableLibrary.dll.mdb
+/Users/Pepe/Desktop/ProjectCerberusTEMP/TaskyPortableLibrary/bin/Debug/CerberusPortableLibrary.dll
+/Users/Pepe/Desktop/ProjectCerberusTEMP/TaskyPortableLibrary/obj/Debug/CerberusPortableLibrary.dll
+/Users/Pepe/Desktop/ProjectCerberusTEMP/TaskyPortableLibrary/obj/Debug/CerberusPortableLibrary.dll.mdb
+/Users/Pepe/Desktop/ProjectCerberusTEMP/TaskyPortableLibrary/bin/Debug/SQLitePCL.raw.dll
+/Users/Pepe/Desktop/ProjectCerberusTEMP/TaskyPortableLibrary/bin/Debug/SQLitePCLRaw.core.dll
+/Users/Pepe/Desktop/ProjectCerberusTEMP/TaskyPortableLibrary/bin/Debug/SQLitePCLRaw.batteries_green.dll
+/Users/Pepe/Desktop/ProjectCerberusTEMP/TaskyPortableLibrary/bin/Debug/SQLitePCLRaw.batteries_v2.dll
+/Users/Pepe/Desktop/ProjectCerberusTEMP/TaskyPortableLibrary/bin/Debug/SQLite-net.dll

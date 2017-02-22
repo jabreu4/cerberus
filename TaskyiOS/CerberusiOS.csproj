@@ -122,12 +122,12 @@
     <BundleResource Include="Resources\icon-114.png" />
     <BundleResource Include="Resources\icon-144.png" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\TaskyPortableLibrary\TaskyPortableLibrary.csproj">
+    <ProjectReference Include="..\TaskyPortableLibrary\CerberusPortableLibrary.csproj">
       <Project>{6611D648-7464-4266-AC13-EB93935B9AD6}</Project>
-      <Name>TaskyPortableLibrary</Name>
+      <Name>CerberusPortableLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\SQLitePCL.raw_basic.0.8.6\build\Xamarin.iOS10\SQLitePCL.raw_basic.targets" Condition="Exists('..\packages\SQLitePCL.raw_basic.0.8.6\build\Xamarin.iOS10\SQLitePCL.raw_basic.targets')" />
 </Project>
