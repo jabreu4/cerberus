@@ -100,7 +100,7 @@
     <Folder Include="Resources\drawable-xhdpi\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TaskyPortableLibrary\CerberusPortableLibrary.csproj">
+    <ProjectReference Include="..\CerberusPortableLibrary\CerberusPortableLibrary.csproj">
       <Project>{6611D648-7464-4266-AC13-EB93935B9AD6}</Project>
       <Name>CerberusPortableLibrary</Name>
     </ProjectReference>

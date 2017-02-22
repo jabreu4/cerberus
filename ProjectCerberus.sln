@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerberusiOS", "TaskyiOS\CerberusiOS.csproj", "{08FAE550-E302-4022-A871-17E0462E99F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerberusiOS", "CerberusiOS\CerberusiOS.csproj", "{08FAE550-E302-4022-A871-17E0462E99F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerberusAndroid", "TaskyAndroid\CerberusAndroid.csproj", "{82F04C1E-2F0D-4396-ADC3-BC9EADEE8E7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerberusAndroid", "CerberusAndroid\CerberusAndroid.csproj", "{82F04C1E-2F0D-4396-ADC3-BC9EADEE8E7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerberusPortableLibrary", "TaskyPortableLibrary\CerberusPortableLibrary.csproj", "{6611D648-7464-4266-AC13-EB93935B9AD6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerberusPortableLibrary", "CerberusPortableLibrary\CerberusPortableLibrary.csproj", "{6611D648-7464-4266-AC13-EB93935B9AD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,7 +41,7 @@ Global
 		{82F04C1E-2F0D-4396-ADC3-BC9EADEE8E7E}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = TaskyiOS\TaskyiOS.csproj
+		StartupItem = CerberusiOS\CerberusiOS.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = None
