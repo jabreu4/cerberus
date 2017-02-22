@@ -4,9 +4,9 @@ using System.Linq;
 using UIKit;
 using MonoTouch.Dialog;
 using Foundation;
-using Tasky.PortableLibrary;
+using Cerberus.PortableLibrary;
 
-namespace Tasky.ApplicationLayer {
+namespace Cerberus.ApplicationLayer {
 
 	/// <summary>
 	/// This is our subclass of the fixed-size Source that allows editing

@@ -1,9 +1,9 @@
 using System;
 using UIKit;
-using Tasky.PortableLibrary;
+using Cerberus.PortableLibrary;
 using MonoTouch.Dialog;
 
-namespace Tasky.ApplicationLayer 
+namespace Cerberus.ApplicationLayer 
 {
 	/// <summary>
 	/// Wrapper class for Task, to use with MonoTouch.Dialog. If it was just iOS platform

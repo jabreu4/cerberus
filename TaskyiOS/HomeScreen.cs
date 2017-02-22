@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using UIKit;
 using MonoTouch.Dialog;
-using Tasky.PortableLibrary;
-using Tasky.ApplicationLayer;
+using Cerberus.PortableLibrary;
+using Cerberus.ApplicationLayer;
 
-namespace Tasky.Screens {
+namespace Cerberus.Screens {
 
 	/// <summary>
 	/// A UITableViewController that uses MonoTouch.Dialog - displays the list of Tasks

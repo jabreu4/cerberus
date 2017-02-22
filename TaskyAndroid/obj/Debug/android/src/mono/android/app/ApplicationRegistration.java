@@ -5,7 +5,7 @@ public class ApplicationRegistration {
 	public static void registerApplications ()
 	{
 				// Application and Instrumentation ACWs must be registered first.
-		mono.android.Runtime.register ("TaskyAndroid.TaskyApp, TaskyAndroid, Version=1.0.6242.24474, Culture=neutral, PublicKeyToken=null", md52562d6e10a3afb80be0d467891322c3b.TaskyApp.class, md52562d6e10a3afb80be0d467891322c3b.TaskyApp.__md_methods);
+		mono.android.Runtime.register ("CerberusAndroid.CerberusApp, CerberusAndroid, Version=1.0.6261.39964, Culture=neutral, PublicKeyToken=null", md5ec9d24f7d828638570feadb8fc89e388.CerberusApp.class, md5ec9d24f7d828638570feadb8fc89e388.CerberusApp.__md_methods);
 		
 	}
 }

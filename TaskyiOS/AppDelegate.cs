@@ -4,10 +4,10 @@ using System.Linq;
 using Foundation;
 using UIKit;
 using SQLite;
-using Tasky.PortableLibrary;
+using Cerberus.PortableLibrary;
 using System.IO;
 
-namespace Tasky 
+namespace Cerberus 
 {
 	public class Application 
 	{

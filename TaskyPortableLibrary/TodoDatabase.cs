@@ -3,7 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using SQLite;
 
-namespace Tasky.PortableLibrary
+namespace Cerberus.PortableLibrary
 {
 	/// <summary>
 	/// TaskDatabase uses ADO.NET to create the [Items] table and create,read,update,delete data

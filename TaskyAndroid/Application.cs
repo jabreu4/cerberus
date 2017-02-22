@@ -2,18 +2,18 @@
 using System.IO;
 using SQLite;
 using Android.App;
-using Tasky.PortableLibrary;
+using Cerberus.PortableLibrary;
 
-namespace TaskyAndroid
+namespace CerberusAndroid
 {
 	[Application]
-	public class TaskyApp : Application {
-		public static TaskyApp Current { get; private set; }
+	public class CerberusApp : Application {
+		public static CerberusApp Current { get; private set; }
 
 		public TodoItemManager TodoManager { get; set; }
 		SQLiteConnection conn;
 
-		public TaskyApp(IntPtr handle, global::Android.Runtime.JniHandleOwnership transfer)
+		public CerberusApp(IntPtr handle, global::Android.Runtime.JniHandleOwnership transfer)
 			: base(handle, transfer) {
 			Current = this;
 		}

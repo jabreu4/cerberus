@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using SQLite;
 
-namespace Tasky.PortableLibrary 
+namespace Cerberus.PortableLibrary 
 {
 	public class TodoItemRepository
 	{

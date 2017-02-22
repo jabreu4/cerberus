@@ -1,7 +1,7 @@
 using System;
 using SQLite;
 
-namespace Tasky.PortableLibrary 
+namespace Cerberus.PortableLibrary 
 {
 	/// <summary>
 	/// Todo Item business object

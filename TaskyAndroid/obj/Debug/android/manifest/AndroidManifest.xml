@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.xamarin.samples.taskyandroid">
   <uses-permission android:name="android.permission.INTERNET" />
-  <application android:label="Tasky" android:debuggable="true" android:icon="@drawable/icon" android:name="md52562d6e10a3afb80be0d467891322c3b.TaskyApp" android:allowBackup="true">
-    <activity android:icon="@drawable/icon" android:label="Tasky" android:name="md51538c9b58d19ad805090b4dfe985c640.HomeScreen">
+  <application android:label="Tasky" android:debuggable="true" android:icon="@drawable/icon" android:name="md5ec9d24f7d828638570feadb8fc89e388.CerberusApp" android:allowBackup="true">
+    <activity android:icon="@drawable/icon" android:label="Cerberus" android:name="md547e3d6929afec296f1216f46762ed9a8.HomeScreen">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="TaskDetailsScreen" android:name="md51538c9b58d19ad805090b4dfe985c640.TodoItemScreen" />
+    <activity android:label="TaskDetailsScreen" android:name="md547e3d6929afec296f1216f46762ed9a8.TodoItemScreen" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.xamarin.samples.taskyandroid.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

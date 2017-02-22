@@ -97,12 +97,17 @@ public class MonoPackageManager {
 
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
-		/* We need to ensure that "TaskyAndroid.dll" comes first in this list. */
-		"TaskyAndroid.dll",
+		/* We need to ensure that "CerberusAndroid.dll" comes first in this list. */
+		"CerberusAndroid.dll",
 		"System.Runtime.dll",
-		"SQLitePCL.raw.dll",
+		"SQLitePCLRaw.core.dll",
+		"SQLitePCLRaw.lib.e_sqlite3.dll",
+		"SQLitePCLRaw.provider.e_sqlite3.dll",
+		"SQLitePCLRaw.batteries_green.dll",
+		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLite-net.dll",
-		"TaskyPortableLibrary.dll",
+		"SQLitePCL.raw.dll",
+		"CerberusPortableLibrary.dll",
 		"System.Threading.dll",
 		"System.Collections.dll",
 		"System.Collections.Concurrent.dll",
@@ -113,6 +118,7 @@ class MonoPackageManager_Resources {
 		"System.Runtime.Extensions.dll",
 		"System.Reflection.Extensions.dll",
 		"System.Linq.Expressions.dll",
+		"System.Globalization.dll",
 		"System.Threading.Tasks.dll",
 		"System.Resources.ResourceManager.dll",
 	};

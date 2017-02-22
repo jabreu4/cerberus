@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Android.App;
 using Android.Widget;
-using Tasky.PortableLibrary;
+using Cerberus.PortableLibrary;
 
-namespace TaskyAndroid.ApplicationLayer 
+namespace CerberusAndroid.ApplicationLayer 
 {
 	/// <summary>
 	/// Adapter that presents Tasks in a row-view

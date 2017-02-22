@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{08FAE550-E302-4022-A871-17E0462E99F3}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/Pepe/Desktop/ProjectCerberus-master/TaskyPortableLibrary/TodoDatabase.cs" line="39" column="1" />
+      <Breakpoint file="/Users/Pepe/Desktop/ProjectCerberus-master/TaskyPortableLibrary/TodoDatabase.cs" line="46" column="1" />
+      <Breakpoint file="/Users/Pepe/Desktop/ProjectCerberus-master/TaskyPortableLibrary/TodoItemRepository.cs" line="18" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CerberusAndroid PreferredExecutionTarget="Android.ZY223TG4X5" />
+  <MonoDevelop.Ide.ItemProperties.CerberusiOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A9449D3F-0ED0-40A2-8E83-B6686A78DA96" />
+</Properties>

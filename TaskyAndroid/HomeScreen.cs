@@ -3,16 +3,16 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Widget;
-using Tasky.PortableLibrary;
-using TaskyAndroid;
-using TaskyAndroid.ApplicationLayer;
+using Cerberus.PortableLibrary;
+using CerberusAndroid;
+using CerberusAndroid.ApplicationLayer;
 
-namespace TaskyAndroid.Screens 
+namespace CerberusAndroid.Screens 
 {
 	/// <summary>
 	/// Main ListView screen displays a list of tasks, plus an [Add] button
 	/// </summary>
-	[Activity (Label = "Tasky", MainLauncher = true, Icon="@drawable/icon")]			
+	[Activity (Label = "Cerberus", MainLauncher = true, Icon="@drawable/icon")]			
 	public class HomeScreen : Activity 
 	{
 		TodoItemListAdapter taskList;
@@ -52,7 +52,7 @@ namespace TaskyAndroid.Screens
 		{
 			base.OnResume ();
 
-			tasks = TaskyApp.Current.TodoManager.GetTasks();
+			tasks = CerberusApp.Current.TodoManager.GetTasks();
 			
 			// create our adapter
 			taskList = new TodoItemListAdapter(this, tasks);
