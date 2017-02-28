@@ -23,9 +23,9 @@ namespace CerberusAndroid.Screens
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-			
-			int taskID = Intent.GetIntExtra("TaskID", 0);
-			if(taskID > 0) {
+
+			string taskID = Intent.GetStringExtra("TaskGUID");
+			if(!string.IsNullOrEmpty(taskID)) {
 				task = CerberusApp.Current.TodoManager.GetTask(taskID);
 			}
 			
@@ -43,7 +43,7 @@ namespace CerberusAndroid.Screens
 			cancelDeleteButton = FindViewById<Button>(Resource.Id.CancelDeleteButton);
 			
 			// set the cancel delete based on whether or not it's an existing task
-			cancelDeleteButton.Text = (task.ID == 0 ? "Cancel" : "Delete");
+			cancelDeleteButton.Text = (string.IsNullOrEmpty(task.ID) ? "Cancel" : "Delete");
 			
 			nameTextEdit.Text = task.Name; 
 			notesTextEdit.Text = task.Notes;
@@ -53,21 +53,21 @@ namespace CerberusAndroid.Screens
 			saveButton.Click += (sender, e) => { Save(); };
 		}
 
-		void Save()
+		async void Save()
 		{
 			task.Name = nameTextEdit.Text;
 			task.Notes = notesTextEdit.Text;
 			//TODO: 
 			task.Done = doneCheckbox.Checked;
 
-			CerberusApp.Current.TodoManager.SaveTask(task);
+			await CerberusApp.Current.TodoManager.SaveTask(task);
 			Finish();
 		}
 		
 		void CancelDelete()
 		{
-			if (task.ID != 0) {
-				CerberusApp.Current.TodoManager.DeleteTask(task.ID);
+			if (!string.IsNullOrEmpty(task.ID)) {
+				CerberusApp.Current.TodoManager.DeleteTask(task);
 			}
 			Finish();
 		}

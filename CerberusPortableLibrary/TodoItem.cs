@@ -1,5 +1,5 @@
 using System;
-using SQLite;
+using Newtonsoft.Json;
 
 namespace Cerberus.PortableLibrary 
 {
@@ -8,16 +8,20 @@ namespace Cerberus.PortableLibrary
 	/// </summary>
 	public class TodoItem 
 	{
-		public TodoItem ()
-		{
-		}
 
-		// SQLite attributes
-		[PrimaryKey, AutoIncrement]
+		// SQLite attributes Not sure if needed for Azure DB
+		// [PrimaryKey, AutoIncrement]
 
-        public int ID { get; set; }
+        public string ID { get; set; }
+
+		[JsonProperty(PropertyName = "name")]
 		public string Name { get; set; }
+
+		[JsonProperty(PropertyName = "notes")]
 		public string Notes { get; set; }
-		public bool Done { get; set; }	// TODO: add this field to the user-interface
+
+		public bool Done { get; set; }  // TODO: add this field to the user-interface
+	
 	}
+
 }

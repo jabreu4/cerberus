@@ -1,67 +1,160 @@
 using System;
-using System.Linq;
+using System.Net.Http;
+//using System.Linq;
+using System.Threading.Tasks;
 using System.Collections.Generic;
-using SQLite;
+//using SQLite;
+
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace Cerberus.PortableLibrary
 {
 	/// <summary>
 	/// TaskDatabase uses ADO.NET to create the [Items] table and create,read,update,delete data
 	/// </summary>
-	public class TodoDatabase 
+	public class TodoDatabase
 	{
-		static object locker = new object ();
+		static object locker = new object();
 
-		public SQLiteConnection database;
+		//public SQLiteConnection database;
 
-		public string path;
+		//public string path;
+
+
+		/************************************************************************************/
+		static TodoDatabase instance = new TodoDatabase();
+
+		const string applicationURL = @"https://testingazurecerberus.azurewebsites.net";
+
+		private MobileServiceClient client;
+
+		private IMobileServiceTable<TodoItem> todoTable;
+
+		/***********************************************************************************/
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="Tasky.DL.TaskDatabase"/> TaskDatabase. 
 		/// if the database doesn't exist, it will create the database and all the tables.
 		/// </summary>
-		public TodoDatabase (SQLiteConnection conn) 
+		public TodoDatabase()
 		{
-			database = conn;
-			// create the tables
-			database.CreateTable<TodoItem>();
-		}
+			//database = conn;
+			//// create the tables
+			//database.CreateTable<TodoItem>();
 
-		public IEnumerable<TodoItem> GetItems ()
+			/***********************************************************************************/
+			//CurrentPlatform.Init();
+
+			// Initialize the client with the mobile app backend URL.
+			client = new MobileServiceClient(applicationURL);
+
+			todoTable = client.GetTable<TodoItem>();
+
+			/***********************************************************************************/
+
+		}
+		/***********************************************************************************/
+		public static TodoDatabase DefaultService
 		{
-			lock (locker) {
-				return (from i in database.Table<TodoItem>() select i).ToList();
+			get
+			{
+				return instance;
 			}
 		}
 
-		public TodoItem GetItem (int id) 
+		public List<TodoItem> Items { get; private set; }
+
+
+		public async Task<List<TodoItem>> RefreshDataAsync()
 		{
-			lock (locker) {
-				return database.Table<TodoItem>().FirstOrDefault(x => x.ID == id);
-				// Following throws NotSupportedException - thanks aliegeni
-				//return (from i in Table<T> ()
-				//        where i.ID == id
-				//        select i).FirstOrDefault ();
+			try
+			{
+				// This code refreshes the entries in the list view by querying the local TodoItems table.
+				// The query excludes completed TodoItems
+				Items = new List<TodoItem>(await todoTable.ReadAsync());
+				//Items = new List<TodoItem>(await todoTable.Where(todoItem => todoItem.Deleted == false).ToListAsync());
+
+				//Items = todoTable.Where(todoItem => todoItem.Deleted == false).ToListAsync();
+
+			}
+			catch (MobileServiceInvalidOperationException e)
+			{
+				//	Console.Error.WriteLine(@"ERROR {0}", e.Message);
+				return null;
+			}
+
+			return Items;
+		}
+
+		/***********************************************************************************/
+
+		public IEnumerable<TodoItem> GetItems()
+		{
+			lock (locker)
+			{
+				/***********************************************************************************/
+				return Items;
+				/***********************************************************************************/
+
 			}
 		}
 
-		public int SaveItem (TodoItem item) 
+		public TodoItem GetItem(string guid)
 		{
-			lock (locker) {
-				if (item.ID != 0) {
-					database.Update(item);
-					return item.ID;
-				} else {
-					return database.Insert(item);
+
+			/***********************************************************************************/
+			foreach (var item in Items)
+			{
+				if (guid.Equals(item.ID))
+				{
+					return item;
 				}
 			}
+
+			return null;
+				/***********************************************************************************/
 		}
 
-		public int DeleteItem(int id) 
+		public async Task<TodoItem> SaveItem(TodoItem item)
 		{
-			lock (locker) {
-				return database.Delete<TodoItem>(id);
+			//if (item.ID != 0) {
+			//	database.Update(item);
+			//	return item.ID;
+			//} else {
+			//	return database.Insert(item);
+			//}
+			/***********************************************************************************/
+			try
+			{
+				if (String.IsNullOrEmpty(item.ID))
+				{
+					await todoTable.InsertAsync(item); // Insert a new TodoItem into the local database.
+			             							   //item.ID = blablabla;
+					Items.Add(item);
+				}
+				else
+				{
+					await todoTable.UpdateAsync(item); // Insert a new TodoItem into the local database.
+				}
 			}
+			catch (MobileServiceInvalidOperationException e)
+			{
+				;//Console.Error.WriteLine(@"ERROR {0}", e.Message);
+			}
+
+			return item; //Todo convert guid to 128bit decimal
+					  //return item.ID;
+			/***********************************************************************************/
+
+		}
+
+		public int DeleteItem(TodoItem item)
+		{
+				/***********************************************************************************/
+				Items.Remove(item);
+				todoTable.DeleteAsync(item); // Delete a TodoItem into the local database
+				return -1;
+				/***********************************************************************************/
 		}
 	}
 }

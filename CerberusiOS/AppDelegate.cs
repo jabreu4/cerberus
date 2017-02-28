@@ -6,7 +6,8 @@ using UIKit;
 using SQLite;
 using Cerberus.PortableLibrary;
 using System.IO;
-
+using Microsoft.WindowsAzure.MobileServices;
+               
 namespace Cerberus 
 {
 	public class Application 
@@ -30,7 +31,7 @@ namespace Cerberus
 
 		public static AppDelegate Current { get; private set; }
 		public TodoItemManager TodoManager { get; set; }
-		SQLiteConnection conn;
+		//SQLiteConnection conn;
 
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
@@ -42,17 +43,16 @@ namespace Cerberus
 			// make the window visible
 			window.MakeKeyAndVisible ();
 
-
 			// Create the database file
-			var sqliteFilename = "TodoItemDB.db3";
-			// we need to put in /Library/ on iOS5.1 to meet Apple's iCloud terms
-			// (they don't want non-user-generated data in Documents)
-			string documentsPath = Environment.GetFolderPath (Environment.SpecialFolder.Personal); // Documents folder
-			string libraryPath = Path.Combine (documentsPath, "..", "Library"); // Library folder
-			var path = Path.Combine(libraryPath, sqliteFilename);
-			conn = new SQLiteConnection(path);
-			TodoManager = new TodoItemManager(conn);
-
+			//var sqliteFilename = "TodoItemDB.db3";
+			//// we need to put in /Library/ on iOS5.1 to meet Apple's iCloud terms
+			//// (they don't want non-user-generated data in Documents)
+			//string documentsPath = Environment.GetFolderPath (Environment.SpecialFolder.Personal); // Documents folder
+			//string libraryPath = Path.Combine (documentsPath, "..", "Library"); // Library folder
+			//var path = Path.Combine(libraryPath, sqliteFilename);
+			//conn = new SQLiteConnection(path);
+			CurrentPlatform.Init();
+			TodoManager = new TodoItemManager();
 
 			// create our nav controller
 			navController = new UINavigationController ();

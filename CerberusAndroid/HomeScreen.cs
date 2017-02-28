@@ -42,18 +42,20 @@ namespace CerberusAndroid.Screens
 			if(taskListView != null) {
 				taskListView.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => {
 					var taskDetails = new Intent (this, typeof (TodoItemScreen));
-					taskDetails.PutExtra ("TaskID", tasks[e.Position].ID);
+					taskDetails.PutExtra("TaskGUID", tasks[e.Position].ID);
 					StartActivity (taskDetails);
 				};
 			}
 		}
-		
-		protected override void OnResume ()
+
+		protected override async void OnResume ()
 		{
 			base.OnResume ();
 
+			await CerberusApp.Current.TodoManager.RefreshDataAsync();
+
 			tasks = CerberusApp.Current.TodoManager.GetTasks();
-			
+
 			// create our adapter
 			taskList = new TodoItemListAdapter(this, tasks);
 

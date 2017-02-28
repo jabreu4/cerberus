@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using SQLite;
+using System.Threading.Tasks;
 
 namespace Cerberus.PortableLibrary 
 {
@@ -8,29 +9,34 @@ namespace Cerberus.PortableLibrary
 	{
 		TodoDatabase db = null;
 
-		public TodoItemRepository (SQLiteConnection conn)
+		public TodoItemRepository ()
 		{
-			db = new TodoDatabase(conn);
+			db = TodoDatabase.DefaultService;
 		}
 
-		public TodoItem GetTask(int id)
+		public async Task<List<TodoItem>> RefreshDataAsync()
 		{
-			return db.GetItem(id);
+			return await db.RefreshDataAsync();
 		}
 
-		public IEnumerable<TodoItem> GetTasks ()
+		public TodoItem GetTask(string guid)
+		{
+			return db.GetItem(guid);
+		}
+
+		public IEnumerable<TodoItem> GetTasks()
 		{
 			return db.GetItems();
 		}
 
-		public int SaveTask (TodoItem item)
+		public async Task<TodoItem> SaveTask (TodoItem item)
 		{
-			return db.SaveItem(item);
+			return await db.SaveItem(item);;
 		}
 
-		public int DeleteTask(int id)
+		public int DeleteTask(TodoItem item)
 		{
-			return db.DeleteItem(id);
+			return db.DeleteItem(item);
 		}
 	}
 }

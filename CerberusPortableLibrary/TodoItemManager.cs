@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using SQLite;
+using System.Threading.Tasks;
 
 namespace Cerberus.PortableLibrary 
 {
@@ -11,29 +12,34 @@ namespace Cerberus.PortableLibrary
 	{
 		TodoItemRepository repository; 
 
-		public TodoItemManager (SQLiteConnection conn)
+		public TodoItemManager ()
 		{
-			repository = new TodoItemRepository (conn);
+			repository = new TodoItemRepository ();
+		}
+
+		public async Task<List<TodoItem>> RefreshDataAsync()
+		{
+			return await repository.RefreshDataAsync();
 		}
 		
-		public TodoItem GetTask(int id)
+		public TodoItem GetTask(string guid)
 		{
-			return repository.GetTask(id);
+			return repository.GetTask(guid);
 		}
 		
 		public IList<TodoItem> GetTasks ()
 		{
 			return new List<TodoItem>(repository.GetTasks());
 		}
-		
-		public int SaveTask (TodoItem item)
+
+		public async Task<TodoItem> SaveTask (TodoItem item)
 		{
-			return repository.SaveTask(item);
+			return await repository.SaveTask(item);;
 		}
 		
-		public int DeleteTask(int id)
+		public int DeleteTask(TodoItem item)
 		{
-			return repository.DeleteTask(id);
+			return repository.DeleteTask(item);
 		}
 	}
 }
