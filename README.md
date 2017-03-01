@@ -1,27 +1,15 @@
-Tasky
+Project Cerberus
 =====
 
-Tasky is a simple cross-platform todo/task application sample that allows
-you to track todo/task items.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In today’s market, large scale companies face challenges when trying to allocate their resources. This problem causes human resources misuse, which eventually yields capital loss for the company. In addition, if the problem is not attended correctly, it can act as a bottleneck for the company&#39;s growth. An example of this problem can be found on a one to many contact methodologies that companies use to allocate resources to events. Companies such as C&amp;C Security Services Inc., the stakeholder and sponsor of the project, use a single resource manager to notify employees for event openings that match the resource’s particular set. For a small event of 20 employees, calling and managing them can be looked as a trivial task. Yet, large events like “Vive la Vida Loca” World Tour at Estadio Hiram Bithorn of Puerto Rico require 300+ employees, making it an extremely cumbersome task on resource management. 
 
-Tasky supports iOS and Android - each with a native UI written in C#.
-Common code lives in a [Portable Class Library](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/pcl/), 
-which is referenced by each application project.
-It uses a local SQLite database to store the tasks, which are saved and read using
-the SQLite-PCL NuGet package.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The key to tackle this problem is to facilitate the distribution of event information to C&amp;C Security Services Inc. resources. To this end Project Cerberus brings a solution to such problem. Project Cerberus is a software solution project designed to handle the human resources of event services for companies such as C&amp;C Security Services Inc. The solution consists of one iPad application for the client’s administrative staff and two applications (iPhone, Android) for the client resources. The iPad application has the ability to create client events and allocate the necessary resources for the events. In addition, the application allows client administrative staff to give a review on resources work performance. Following the creation of a client event, both iPhone and Android applications can receive push notifications of the available client events. It will also provide the events details and dress code for the resources. With this, resource will have the opportunity to accept or deny their attendance to a particular event. In the end, these applications are aimed to cut down event planning time and facilitate the resource manager’s work.  
 
-This project type requires Xamarin 3 (Xamarin Studio 5.x) or Visual Studio 2013 with PCL support.
-It requires an Indie licence (or start a free Trial) of Xamarin.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project Cerberus goals are divided in four milestones. Each milestone is a main component of the applications to be delivered. The first milestone known as Develop Project Backend Structure, contains the design and implementation of the server and database modules. These modules establish the information delivery of the client’s resources. The second milestone denoted as Event Creation and Employee Management, includes the modules responsible of creating client events and assigning the number of resources for such events. The third milestone referred as Employee Ranking and Event Matching Logistics is responsible of the client event rotations and resources reviews. The last epic known as Module Integration and System Testing holds the functionality and integration of all the modules in previous milestones. As a result, these four milestone guarantee the successful delivery of Project Cerberus applications.
 
 ![screenshot](https://github.com/xamarin/mobile-samples/raw/master/Tasky/Screenshots/all-small.png "iOS and Android")
-
-
-Xamarin.Forms Version
----------------------
-The equivalent app written with [Xamarin.Forms](http://xamarin.com/forms) is
-called [Todo](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo).
 
 Authors
 -------
 
-Bryan Costanich, Craig Dunn
+Charlie Castro, Jose Martinez, Jose Abreu, Jean Rodriguez
