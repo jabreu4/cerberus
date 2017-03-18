@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+/*using System.Collections.Generic;
 using Android.App;
 using Android.Widget;
 using Cerberus.PortableLibrary;
@@ -69,4 +69,4 @@ namespace CerberusAndroid.ApplicationLayer
 			return view;
 		}
 	}
-}
+} */
