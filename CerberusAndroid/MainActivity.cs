@@ -89,17 +89,19 @@ namespace CerberusAndroid
 
         private void LogInDialog_mOnLogInComplete(object sender, OnLogInEventArgs e)
         {
-            // at this part we would send request to the server and get a response, here goes like a php code or azure
-            //In this case we would Go to the home page assuming his username and password is correct
-            
-        //Set notification to the user that the account link was sent to the email
-             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-             AlertDialog alertDialog = builder.Create();
-             alertDialog.SetTitle("Welcome Home");
-             alertDialog.SetIcon(Resource.Drawable.Icon);
-             alertDialog.SetMessage( e.Username);
-             alertDialog.Show();
-        
+
+            //The user has been authenticated and logged in, we send him to his employee page with the use of intent
+            //We must pass the username string to greet him on the homepage
+
+            Intent intent = new Intent(this, typeof(EmployeeHomePage));
+            // el EventName es un key para referenciarlo en el otro activity
+            intent.PutExtra("EmployeeUsername",e.Username);
+            this.StartActivity(intent);
+            //Once we he is logged in we want to kill the log in process
+            this.Finish();//finish the login screen
+
+
+
 
 
 
@@ -108,7 +110,6 @@ namespace CerberusAndroid
         private void SignUpDialog_mOnSignUpComplete(object sender, OnSignEventArgs e)
         {
            
-
 
             /*
             //Set notification to the user that the account link was sent to the email

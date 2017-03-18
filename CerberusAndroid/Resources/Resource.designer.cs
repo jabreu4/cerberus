@@ -97,32 +97,32 @@ namespace CerberusAndroid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070006
-			public const int AddButton = 2131165190;
-			
-			// aapt resource value: 0x7f070014
-			public const int CancelDeleteButton = 2131165204;
-			
-			// aapt resource value: 0x7f07000e
-			public const int NameLabel = 2131165198;
-			
 			// aapt resource value: 0x7f07000f
-			public const int NameText = 2131165199;
+			public const int AddButton = 2131165199;
+			
+			// aapt resource value: 0x7f07001d
+			public const int CancelDeleteButton = 2131165213;
+			
+			// aapt resource value: 0x7f070017
+			public const int NameLabel = 2131165207;
+			
+			// aapt resource value: 0x7f070018
+			public const int NameText = 2131165208;
+			
+			// aapt resource value: 0x7f070019
+			public const int NotesLabel = 2131165209;
+			
+			// aapt resource value: 0x7f07001a
+			public const int NotesText = 2131165210;
+			
+			// aapt resource value: 0x7f07001c
+			public const int SaveButton = 2131165212;
+			
+			// aapt resource value: 0x7f070016
+			public const int TaskDetailsHeader = 2131165206;
 			
 			// aapt resource value: 0x7f070010
-			public const int NotesLabel = 2131165200;
-			
-			// aapt resource value: 0x7f070011
-			public const int NotesText = 2131165201;
-			
-			// aapt resource value: 0x7f070013
-			public const int SaveButton = 2131165203;
-			
-			// aapt resource value: 0x7f07000d
-			public const int TaskDetailsHeader = 2131165197;
-			
-			// aapt resource value: 0x7f070007
-			public const int TaskList = 2131165191;
+			public const int TaskList = 2131165200;
 			
 			// aapt resource value: 0x7f070002
 			public const int btnDialogLogIn = 2131165186;
@@ -130,29 +130,56 @@ namespace CerberusAndroid
 			// aapt resource value: 0x7f070005
 			public const int btnDialogSignUpWithEmail = 2131165189;
 			
-			// aapt resource value: 0x7f070009
-			public const int btnLogIn = 2131165193;
+			// aapt resource value: 0x7f07000c
+			public const int btnEmployeeEvents = 2131165196;
 			
-			// aapt resource value: 0x7f07000b
-			public const int btnSignUpWithEmail = 2131165195;
+			// aapt resource value: 0x7f07000d
+			public const int btnEmployeeHistory = 2131165197;
+			
+			// aapt resource value: 0x7f07000e
+			public const int btnEmployeeProfile = 2131165198;
 			
 			// aapt resource value: 0x7f070012
-			public const int chkDone = 2131165202;
+			public const int btnLogIn = 2131165202;
+			
+			// aapt resource value: 0x7f070014
+			public const int btnSignUpWithEmail = 2131165204;
+			
+			// aapt resource value: 0x7f07001b
+			public const int chkDone = 2131165211;
+			
+			// aapt resource value: 0x7f070011
+			public const int demoImageView = 2131165201;
+			
+			// aapt resource value: 0x7f070009
+			public const int imageButton1 = 2131165193;
 			
 			// aapt resource value: 0x7f070008
-			public const int demoImageView = 2131165192;
+			public const int imageView1 = 2131165192;
+			
+			// aapt resource value: 0x7f070007
+			public const int linearLayout1 = 2131165191;
+			
+			// aapt resource value: 0x7f070006
+			public const int linearLayout2 = 2131165190;
+			
+			// aapt resource value: 0x7f07000b
+			public const int linearLayout3 = 2131165195;
+			
+			// aapt resource value: 0x7f07001e
+			public const int lstItemTask = 2131165214;
 			
 			// aapt resource value: 0x7f070015
-			public const int lstItemTask = 2131165205;
-			
-			// aapt resource value: 0x7f07000c
-			public const int progressBar1 = 2131165196;
+			public const int progressBar1 = 2131165205;
 			
 			// aapt resource value: 0x7f070003
 			public const int txtEmail = 2131165187;
 			
 			// aapt resource value: 0x7f07000a
-			public const int txtOr = 2131165194;
+			public const int txtEmployeeGreetings = 2131165194;
+			
+			// aapt resource value: 0x7f070013
+			public const int txtOr = 2131165203;
 			
 			// aapt resource value: 0x7f070004
 			public const int txtPassword = 2131165188;
@@ -183,16 +210,19 @@ namespace CerberusAndroid
 			public const int dialog_signup = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int HomeScreen = 2130903042;
+			public const int EmployeeHomeScreen = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Main = 2130903043;
+			public const int HomeScreen = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int TaskDetails = 2130903044;
+			public const int Main = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int TaskListItem = 2130903045;
+			public const int TaskDetails = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int TaskListItem = 2130903046;
 			
 			static Layout()
 			{

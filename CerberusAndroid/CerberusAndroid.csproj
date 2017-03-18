@@ -78,6 +78,7 @@
   <ItemGroup>
     <Compile Include="Dialog_LogIn.cs" />
     <Compile Include="Dialog_SignUp.cs" />
+    <Compile Include="EmployeeHomePage.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -94,6 +95,9 @@
     <None Include="packages.config" />
     <AndroidResource Include="Resources\layout\dialog_signup.axml" />
     <AndroidResource Include="Resources\layout\dialog_login.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\EmployeeHomeScreen.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
