@@ -76,6 +76,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dialog_LogIn.cs" />
     <Compile Include="Dialog_SignUp.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,9 +90,12 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
-    <AndroidResource Include="Resources\layout\dialog_signup.axml" />
     <AndroidResource Include="Resources\layout\Main.axml" />
     <None Include="packages.config" />
+    <AndroidResource Include="Resources\layout\dialog_signup.axml" />
+    <AndroidResource Include="Resources\layout\dialog_login.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

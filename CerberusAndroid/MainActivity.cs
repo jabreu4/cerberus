@@ -18,6 +18,7 @@ namespace CerberusAndroid
          * **********************************************************************/
         private Button mBtnSignUpWithEmail;
         private ProgressBar mProgressBar;
+        private Button mBtnLogIn;
 
 
         /*************************************************************************
@@ -37,6 +38,7 @@ namespace CerberusAndroid
 
             //wire up the sign up button
             mBtnSignUpWithEmail = FindViewById<Button>(Resource.Id.btnSignUpWithEmail);
+            mBtnLogIn = FindViewById<Button>(Resource.Id.btnLogIn);
 
             //Register the sign up with email button listener
             mBtnSignUpWithEmail.Click += (object sender, EventArgs args) =>
@@ -54,6 +56,52 @@ namespace CerberusAndroid
 
 
             };
+
+            //Register the sign up with email button listener
+            mBtnLogIn.Click += (object sender, EventArgs args) =>
+            {
+                //Instantiate a Fragment transaction which in this case is the  SignUp transaction
+                FragmentTransaction transaction = FragmentManager.BeginTransaction();
+                //Pull up the dialog Fragment object of our class
+                Dialog_LogIn logInDialog = new Dialog_LogIn();
+                //Show the transaction
+                logInDialog.Show(transaction, "dialog fragment");
+
+                //Recive the broadcase from the signup and say hey i did get your request event, lets subscribe you
+                logInDialog.mOnLogInComplete += LogInDialog_mOnLogInComplete;
+
+
+
+            };
+
+
+
+
+
+
+
+        }
+
+        private void LogInDialog_mOnLogInComplete(object sender, OnSignEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void LogInDialog_mOnLogInComplete(object sender, OnLogInEventArgs e)
+        {
+            // at this part we would send request to the server and get a response, here goes like a php code or azure
+            //In this case we would Go to the home page assuming his username and password is correct
+            
+        //Set notification to the user that the account link was sent to the email
+             AlertDialog.Builder builder = new AlertDialog.Builder(this);
+             AlertDialog alertDialog = builder.Create();
+             alertDialog.SetTitle("Welcome Home");
+             alertDialog.SetIcon(Resource.Drawable.Icon);
+             alertDialog.SetMessage( e.Username);
+             alertDialog.Show();
+        
+
+
 
         }
 
