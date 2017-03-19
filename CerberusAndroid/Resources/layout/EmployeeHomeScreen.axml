@@ -52,7 +52,9 @@
             android:id="@+id/btnEmployeeEvents"
             android:layout_marginBottom="20.0dp"
             android:textStyle="bold"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="20.0dp"
+            android:layout_marginRight="20.0dp" />
         <Button
             android:text="History"
             android:layout_width="match_parent"
@@ -61,7 +63,9 @@
             android:id="@+id/btnEmployeeHistory"
             android:layout_marginBottom="20.0dp"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginLeft="20.0dp"
+            android:layout_marginRight="20.0dp" />
         <Button
             android:text="View Profile"
             android:layout_width="match_parent"
@@ -70,6 +74,8 @@
             android:id="@+id/btnEmployeeProfile"
             android:layout_marginBottom="20.0dp"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginLeft="20.0dp"
+            android:layout_marginRight="20.0dp" />
     </LinearLayout>
 </LinearLayout>

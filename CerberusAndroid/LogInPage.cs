@@ -10,7 +10,7 @@ using System.Threading;
 namespace CerberusAndroid
 {
     [Activity(Label = "CerberusAndroid", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    public class LogInPage : Activity
     {
         /***********************************************************************
          *                          Variables
@@ -31,7 +31,7 @@ namespace CerberusAndroid
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+            SetContentView(Resource.Layout.LogIn);
 
             //Wire the Progress Bar
             mProgressBar = FindViewById<ProgressBar>(Resource.Id.progressBar1);
@@ -82,10 +82,7 @@ namespace CerberusAndroid
 
         }
 
-        private void LogInDialog_mOnLogInComplete(object sender, OnSignEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
+  
 
         private void LogInDialog_mOnLogInComplete(object sender, OnLogInEventArgs e)
         {
@@ -99,10 +96,6 @@ namespace CerberusAndroid
             this.StartActivity(intent);
             //Once we he is logged in we want to kill the log in process
             this.Finish();//finish the login screen
-
-
-
-
 
 
         }
