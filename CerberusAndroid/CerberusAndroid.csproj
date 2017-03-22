@@ -104,6 +104,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EmployeeEvents.cs" />
+    <Compile Include="EmployeeUpcomingEvents.cs" />
+    <Compile Include="EmployeeUpcomingEventsAdapter.cs" />
     <Compile Include="EmployeePastEventDetails.cs" />
     <Compile Include="Dialog_LogIn.cs" />
     <Compile Include="Dialog_SignUp.cs" />
@@ -146,8 +148,10 @@
     <AndroidResource Include="Resources\layout\listview_row.axml" />
     <AndroidResource Include="Resources\layout\ItemView.axml" />
     <AndroidResource Include="Resources\layout\fragment_sample.axml" />
-    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout\EmployeeEventsTabsPage.axml" />
     <AndroidResource Include="Resources\layout\pager_item.axml" />
+    <AndroidResource Include="Resources\layout\EmployeeUpcomingEvents.axml" />
+    <AndroidResource Include="Resources\layout\row_upcomingEvent.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
