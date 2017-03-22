@@ -44,12 +44,18 @@ namespace CerberusAndroid
             };
 
             //Pass intent to the Employee History Events
+            mBtnPastEvents.Click += (object sender, EventArgs args) =>
+            {
+                Intent intent = new Intent(this, typeof(EmployeePastEvents));
+                this.StartActivity(intent);
+            };
+
+            //Pass intent to the Employee  Events
             mBtnEvents.Click += (object sender, EventArgs args) =>
             {
                 Intent intent = new Intent(this, typeof(EmployeeEvents));
                 this.StartActivity(intent);
             };
-
 
 
 
