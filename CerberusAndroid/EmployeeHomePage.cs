@@ -19,6 +19,7 @@ namespace CerberusAndroid
         TextView mEmployeeUsername;
         Button mBtnEmployeeProfile;
         Button mBtnPastEvents;
+        Button mBtnEvents;
 
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -31,6 +32,7 @@ namespace CerberusAndroid
             mEmployeeUsername = FindViewById<TextView>(Resource.Id.txtEmployeeGreetings);
             mBtnEmployeeProfile = FindViewById<Button>(Resource.Id.btnEmployeeProfile);
             mBtnPastEvents = FindViewById<Button>(Resource.Id.btnEmployeeHistory);
+            mBtnEvents = FindViewById<Button>(Resource.Id.btnEmployeeEvents);
             //Pass the values to from the main activity
             mEmployeeUsername.Text = "Welcome !\n" + Intent.GetStringExtra("EmployeeUsername").ToString();
            
@@ -42,9 +44,9 @@ namespace CerberusAndroid
             };
 
             //Pass intent to the Employee History Events
-            mBtnPastEvents.Click += (object sender, EventArgs args) =>
+            mBtnEvents.Click += (object sender, EventArgs args) =>
             {
-                Intent intent = new Intent(this, typeof(EmployeePastEvents));
+                Intent intent = new Intent(this, typeof(EmployeeEvents));
                 this.StartActivity(intent);
             };
 
