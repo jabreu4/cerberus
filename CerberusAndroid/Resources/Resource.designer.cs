@@ -79,13 +79,16 @@ namespace CerberusAndroid
 			public const int edit_text_style = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int Icon = 2130837509;
+			public const int ic_action_search = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int mail = 2130837510;
+			public const int Icon = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int ProgressBarStyle = 2130837511;
+			public const int mail = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int ProgressBarStyle = 2130837512;
 			
 			static Drawable()
 			{
@@ -100,143 +103,170 @@ namespace CerberusAndroid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070016
-			public const int AddButton = 2131165206;
+			// aapt resource value: 0x7f08001b
+			public const int AddButton = 2131230747;
 			
-			// aapt resource value: 0x7f07002c
-			public const int CancelDeleteButton = 2131165228;
+			// aapt resource value: 0x7f080034
+			public const int CancelDeleteButton = 2131230772;
 			
-			// aapt resource value: 0x7f070026
-			public const int NameLabel = 2131165222;
+			// aapt resource value: 0x7f08002e
+			public const int NameLabel = 2131230766;
 			
-			// aapt resource value: 0x7f070027
-			public const int NameText = 2131165223;
+			// aapt resource value: 0x7f08002f
+			public const int NameText = 2131230767;
 			
-			// aapt resource value: 0x7f070028
-			public const int NotesLabel = 2131165224;
+			// aapt resource value: 0x7f080030
+			public const int NotesLabel = 2131230768;
 			
-			// aapt resource value: 0x7f070029
-			public const int NotesText = 2131165225;
+			// aapt resource value: 0x7f080031
+			public const int NotesText = 2131230769;
 			
-			// aapt resource value: 0x7f07002b
-			public const int SaveButton = 2131165227;
+			// aapt resource value: 0x7f080033
+			public const int SaveButton = 2131230771;
 			
-			// aapt resource value: 0x7f070025
-			public const int TaskDetailsHeader = 2131165221;
+			// aapt resource value: 0x7f08002d
+			public const int TaskDetailsHeader = 2131230765;
 			
-			// aapt resource value: 0x7f070017
-			public const int TaskList = 2131165207;
+			// aapt resource value: 0x7f08001c
+			public const int TaskList = 2131230748;
 			
-			// aapt resource value: 0x7f070002
-			public const int btnDialogLogIn = 2131165186;
+			// aapt resource value: 0x7f080002
+			public const int btnDialogLogIn = 2131230722;
 			
-			// aapt resource value: 0x7f070005
-			public const int btnDialogSignUpWithEmail = 2131165189;
+			// aapt resource value: 0x7f080005
+			public const int btnDialogSignUpWithEmail = 2131230725;
 			
-			// aapt resource value: 0x7f07000e
-			public const int btnEmployeeEvents = 2131165198;
+			// aapt resource value: 0x7f08000e
+			public const int btnEmployeeEvents = 2131230734;
 			
-			// aapt resource value: 0x7f07000f
-			public const int btnEmployeeHistory = 2131165199;
+			// aapt resource value: 0x7f08000f
+			public const int btnEmployeeHistory = 2131230735;
 			
-			// aapt resource value: 0x7f070010
-			public const int btnEmployeeProfile = 2131165200;
+			// aapt resource value: 0x7f08000b
+			public const int btnEmployeeInbox = 2131230731;
 			
-			// aapt resource value: 0x7f07001d
-			public const int btnLogIn = 2131165213;
+			// aapt resource value: 0x7f080010
+			public const int btnEmployeeProfile = 2131230736;
 			
-			// aapt resource value: 0x7f07001f
-			public const int btnSignUpWithEmail = 2131165215;
+			// aapt resource value: 0x7f080022
+			public const int btnLogIn = 2131230754;
 			
-			// aapt resource value: 0x7f07002a
-			public const int chkDone = 2131165226;
+			// aapt resource value: 0x7f080024
+			public const int btnSignUpWithEmail = 2131230756;
 			
-			// aapt resource value: 0x7f07001c
-			public const int demoImageView = 2131165212;
+			// aapt resource value: 0x7f080032
+			public const int chkDone = 2131230770;
 			
-			// aapt resource value: 0x7f070019
-			public const int eventDateItemTxtView = 2131165209;
+			// aapt resource value: 0x7f080011
+			public const int containerInbox = 2131230737;
 			
-			// aapt resource value: 0x7f07001b
-			public const int eventDateTextView = 2131165211;
+			// aapt resource value: 0x7f080021
+			public const int demoImageView = 2131230753;
 			
-			// aapt resource value: 0x7f070018
-			public const int eventNameItemTxtViewId = 2131165208;
+			// aapt resource value: 0x7f080013
+			public const int eTxtSearchInbox = 2131230739;
 			
-			// aapt resource value: 0x7f07001a
-			public const int eventNameTextView = 2131165210;
+			// aapt resource value: 0x7f08001e
+			public const int eventDateItemTxtView = 2131230750;
 			
-			// aapt resource value: 0x7f07000b
-			public const int imageButton1 = 2131165195;
+			// aapt resource value: 0x7f080020
+			public const int eventDateTextView = 2131230752;
 			
-			// aapt resource value: 0x7f07000a
-			public const int imageView1 = 2131165194;
+			// aapt resource value: 0x7f08001d
+			public const int eventNameItemTxtViewId = 2131230749;
 			
-			// aapt resource value: 0x7f070021
-			public const int item_subtitle = 2131165217;
+			// aapt resource value: 0x7f08001f
+			public const int eventNameTextView = 2131230751;
 			
-			// aapt resource value: 0x7f070022
-			public const int item_title = 2131165218;
+			// aapt resource value: 0x7f08000a
+			public const int imageView1 = 2131230730;
 			
-			// aapt resource value: 0x7f070009
-			public const int linearLayout1 = 2131165193;
+			// aapt resource value: 0x7f080026
+			public const int item_subtitle = 2131230758;
 			
-			// aapt resource value: 0x7f070008
-			public const int linearLayout2 = 2131165192;
+			// aapt resource value: 0x7f080027
+			public const int item_title = 2131230759;
 			
-			// aapt resource value: 0x7f07000d
-			public const int linearLayout3 = 2131165197;
+			// aapt resource value: 0x7f080009
+			public const int linearLayout1 = 2131230729;
 			
-			// aapt resource value: 0x7f070013
-			public const int listViewUpcomingEvents = 2131165203;
+			// aapt resource value: 0x7f080008
+			public const int linearLayout2 = 2131230728;
 			
-			// aapt resource value: 0x7f070012
-			public const int llContainer = 2131165202;
+			// aapt resource value: 0x7f08000d
+			public const int linearLayout3 = 2131230733;
 			
-			// aapt resource value: 0x7f07002d
-			public const int lstItemTask = 2131165229;
+			// aapt resource value: 0x7f080012
+			public const int listViewInbox = 2131230738;
 			
-			// aapt resource value: 0x7f070011
-			public const int pastEventsListView = 2131165201;
+			// aapt resource value: 0x7f080018
+			public const int listViewUpcomingEvents = 2131230744;
 			
-			// aapt resource value: 0x7f070020
-			public const int progressBar1 = 2131165216;
+			// aapt resource value: 0x7f080017
+			public const int llContainer = 2131230743;
 			
-			// aapt resource value: 0x7f070007
-			public const int sample_content_fragment = 2131165191;
+			// aapt resource value: 0x7f080035
+			public const int lstItemTask = 2131230773;
 			
-			// aapt resource value: 0x7f070006
-			public const int sample_main_layout = 2131165190;
+			// aapt resource value: 0x7f080014
+			public const int pastEventsListView = 2131230740;
 			
-			// aapt resource value: 0x7f070014
-			public const int sliding_tabs = 2131165204;
+			// aapt resource value: 0x7f080025
+			public const int progressBar1 = 2131230757;
 			
-			// aapt resource value: 0x7f070003
-			public const int txtEmail = 2131165187;
+			// aapt resource value: 0x7f080007
+			public const int sample_content_fragment = 2131230727;
 			
-			// aapt resource value: 0x7f07000c
-			public const int txtEmployeeGreetings = 2131165196;
+			// aapt resource value: 0x7f080006
+			public const int sample_main_layout = 2131230726;
 			
-			// aapt resource value: 0x7f07001e
-			public const int txtOr = 2131165214;
+			// aapt resource value: 0x7f080036
+			public const int search = 2131230774;
 			
-			// aapt resource value: 0x7f070004
-			public const int txtPassword = 2131165188;
+			// aapt resource value: 0x7f080019
+			public const int sliding_tabs = 2131230745;
 			
-			// aapt resource value: 0x7f070024
-			public const int txtUpcomingEventDate = 2131165220;
+			// aapt resource value: 0x7f080003
+			public const int txtEmail = 2131230723;
 			
-			// aapt resource value: 0x7f070023
-			public const int txtUpcomingEventName = 2131165219;
+			// aapt resource value: 0x7f08000c
+			public const int txtEmployeeGreetings = 2131230732;
 			
-			// aapt resource value: 0x7f070000
-			public const int txtUsername = 2131165184;
+			// aapt resource value: 0x7f08002a
+			public const int txtInboxDate = 2131230762;
 			
-			// aapt resource value: 0x7f070001
-			public const int txtUsernamePassword = 2131165185;
+			// aapt resource value: 0x7f080028
+			public const int txtInboxNotification = 2131230760;
 			
-			// aapt resource value: 0x7f070015
-			public const int viewpager = 2131165205;
+			// aapt resource value: 0x7f080029
+			public const int txtInboxStatus = 2131230761;
+			
+			// aapt resource value: 0x7f080023
+			public const int txtOr = 2131230755;
+			
+			// aapt resource value: 0x7f080004
+			public const int txtPassword = 2131230724;
+			
+			// aapt resource value: 0x7f080016
+			public const int txtUpComingEventDate = 2131230742;
+			
+			// aapt resource value: 0x7f080015
+			public const int txtUpComingEventName = 2131230741;
+			
+			// aapt resource value: 0x7f08002c
+			public const int txtUpcomingEventDate = 2131230764;
+			
+			// aapt resource value: 0x7f08002b
+			public const int txtUpcomingEventName = 2131230763;
+			
+			// aapt resource value: 0x7f080000
+			public const int txtUsername = 2131230720;
+			
+			// aapt resource value: 0x7f080001
+			public const int txtUsernamePassword = 2131230721;
+			
+			// aapt resource value: 0x7f08001a
+			public const int viewpager = 2131230746;
 			
 			static Id()
 			{
@@ -264,40 +294,49 @@ namespace CerberusAndroid
 			public const int EmployeeHomeScreen = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int EmployeePastEvents = 2130903044;
+			public const int EmployeeInbox = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int EmployeeProfile = 2130903045;
+			public const int EmployeePastEvents = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int EmployeeUpcomingEvents = 2130903046;
+			public const int EmployeeProfile = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int fragment_sample = 2130903047;
+			public const int EmployeeUpcomingEventItemView = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int HomeScreen = 2130903048;
+			public const int EmployeeUpcomingEvents = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int ItemView = 2130903049;
+			public const int fragment_sample = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int listview_row = 2130903050;
+			public const int HomeScreen = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int LogIn = 2130903051;
+			public const int ItemView = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int pager_item = 2130903052;
+			public const int listview_row = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int row_upcomingEvent = 2130903053;
+			public const int LogIn = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int TaskDetails = 2130903054;
+			public const int pager_item = 2130903054;
 			
 			// aapt resource value: 0x7f03000f
-			public const int TaskListItem = 2130903055;
+			public const int row_inbox = 2130903055;
+			
+			// aapt resource value: 0x7f030010
+			public const int row_upcomingEvent = 2130903056;
+			
+			// aapt resource value: 0x7f030011
+			public const int TaskDetails = 2130903057;
+			
+			// aapt resource value: 0x7f030012
+			public const int TaskListItem = 2130903058;
 			
 			static Layout()
 			{
@@ -305,6 +344,22 @@ namespace CerberusAndroid
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f070000
+			public const int actionbar = 2131165184;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}

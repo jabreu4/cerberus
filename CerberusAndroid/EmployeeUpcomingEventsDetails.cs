@@ -25,11 +25,11 @@ namespace CerberusAndroid
 
             // Create your application here
             // Create your application here
-            SetContentView(Resource.Layout.ItemView);
+            SetContentView(Resource.Layout.EmployeeUpcomingEventItemView);
 
             // instantiate the text views we are going to get
-            eventDate = FindViewById<TextView>(Resource.Id.eventDateItemTxtView);
-            eventName = FindViewById<TextView>(Resource.Id.eventNameItemTxtViewId);
+            eventDate = FindViewById<TextView>(Resource.Id.txtUpComingEventDate);
+            eventName = FindViewById<TextView>(Resource.Id.txtUpComingEventName);
 
             //Pass the values to from the main activity
             eventName.Text = Intent.GetStringExtra("NombreDeEvento").ToString();

@@ -51,7 +51,7 @@ namespace CerberusAndroid
                 items.Add("Upcoming");
                 items.Add("Accepted");
                 items.Add("Rejected");
-                items.Add("History");
+          
 
             }
 
@@ -92,8 +92,21 @@ namespace CerberusAndroid
                     upcomingEventsListView.Adapter = adapter;
 
 
-                    upcomingEventsListView.ItemClick += UpcomingEventsListView_ItemClick;
-                  
+                    upcomingEventsListView.ItemClick += (sender, e) =>
+                    {
+                        string str = upComingEvents[e.Position].ToString();
+                        Intent intent = new Intent(view.Context, typeof(EmployeePastEventDetails));
+               
+                        intent.PutExtra("NombreDeEvento", upComingEvents[e.Position].EventName);
+                        intent.PutExtra("FechaDeEvento", upComingEvents[e.Position].EventDate);
+                        view.Context.StartActivity(intent);
+
+
+
+
+                    };
+
+
 
                     container.AddView(view);
 
@@ -112,11 +125,7 @@ namespace CerberusAndroid
 
             }
 
-            private void UpcomingEventsListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
-            {
-              
-               
-            }
+           
 
             public string GetHeaderTitle (int position)
             {

@@ -104,7 +104,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EmployeeEvents.cs" />
+    <Compile Include="EmployeeInbox.cs" />
     <Compile Include="EmployeeUpcomingEvents.cs" />
+    <Compile Include="EmployeeInboxAdapter.cs" />
     <Compile Include="EmployeeUpcomingEventsAdapter.cs" />
     <Compile Include="EmployeePastEventDetails.cs" />
     <Compile Include="Dialog_LogIn.cs" />
@@ -113,12 +115,16 @@
     <Compile Include="EmployeeHomePage.cs" />
     <Compile Include="EmployeePastEvents.cs" />
     <Compile Include="EmployeeProfile.cs" />
+    <Compile Include="EmployeeUpcomingEventsDetails.cs" />
+    <Compile Include="ExtMethods.cs" />
     <Compile Include="LogInPage.cs" />
     <Compile Include="MyListViewAdapter.cs" />
+    <Compile Include="ProjectCerberusInbox.cs" />
     <Compile Include="ProjectCerberusEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="HomeScreen.cs" />
+    <Compile Include="SearchBarAnimation.cs" />
     <Compile Include="SlidingTabScrollView.cs" />
     <Compile Include="SlidingTabsFragment.cs" />
     <Compile Include="SlidingTabStrip.cs" />
@@ -152,6 +158,11 @@
     <AndroidResource Include="Resources\layout\pager_item.axml" />
     <AndroidResource Include="Resources\layout\EmployeeUpcomingEvents.axml" />
     <AndroidResource Include="Resources\layout\row_upcomingEvent.axml" />
+    <AndroidResource Include="Resources\layout\EmployeeUpcomingEventItemView.axml" />
+    <AndroidResource Include="Resources\layout\EmployeeInbox.axml" />
+    <AndroidResource Include="Resources\layout\row_inbox.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -204,6 +215,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\themes.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_action_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\actionbar.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\SQLitePCL.raw_basic.0.8.6\build\MonoAndroid\SQLitePCL.raw_basic.targets" Condition="Exists('..\packages\SQLitePCL.raw_basic.0.8.6\build\MonoAndroid\SQLitePCL.raw_basic.targets')" />

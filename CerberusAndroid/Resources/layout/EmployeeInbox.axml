@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/containerInbox">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#E2E2E2"
+            android:weightSum="75">
+            <TextView
+                android:text="Notification"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="25"
+                android:gravity="center_horizontal"
+                android:textColor="#000"
+                android:textSize="16sp" />
+            <TextView
+                android:text="Status"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="25"
+                android:gravity="center_horizontal"
+                android:textColor="#000"
+                android:textSize="16sp" />
+            <TextView
+                android:text="Date"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="25"
+                android:gravity="center_horizontal"
+                android:textColor="#000"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:background="#000" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewInbox"
+            android:background="#F2F2F2"
+            android:divider="#101010"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/eTxtSearchInbox"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/edit_text_style"
+        android:hint="Search Inbox"
+        android:textColor="#000" />
+</FrameLayout>

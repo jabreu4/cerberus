@@ -20,6 +20,7 @@ namespace CerberusAndroid
         Button mBtnEmployeeProfile;
         Button mBtnPastEvents;
         Button mBtnEvents;
+        ImageButton mBtnInbox;
 
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -33,6 +34,7 @@ namespace CerberusAndroid
             mBtnEmployeeProfile = FindViewById<Button>(Resource.Id.btnEmployeeProfile);
             mBtnPastEvents = FindViewById<Button>(Resource.Id.btnEmployeeHistory);
             mBtnEvents = FindViewById<Button>(Resource.Id.btnEmployeeEvents);
+            mBtnInbox = FindViewById<ImageButton>(Resource.Id.btnEmployeeInbox);
             //Pass the values to from the main activity
             mEmployeeUsername.Text = "Welcome !\n" + Intent.GetStringExtra("EmployeeUsername").ToString();
            
@@ -57,6 +59,12 @@ namespace CerberusAndroid
                 this.StartActivity(intent);
             };
 
+            //Pass intent to the Employee  Inbox
+            mBtnInbox.Click += (object sender, EventArgs args) =>
+            {
+                Intent intent = new Intent(this, typeof(EmployeeInbox));
+                this.StartActivity(intent);
+            };
 
 
         }
