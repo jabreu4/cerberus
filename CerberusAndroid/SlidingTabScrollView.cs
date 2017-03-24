@@ -23,8 +23,7 @@ namespace CerberusAndroid
 
         private int mTitleOffset;
 
-        private int mTabViewLayoutID;
-        private int mTabViewTextViewID;
+  
 
         private ViewPager mViewPager;
         private ViewPager.IOnPageChangeListener mViewPagerPageChangeListener;

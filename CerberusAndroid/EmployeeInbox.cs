@@ -25,7 +25,12 @@ namespace CerberusAndroid
         private bool mAnimatedDown; // detect if the action bar is up or down animation
         private bool mIsAnimating; //Check when the animation has been done so the user dosent screw up the animation
         private EmployeeInboxAdapter mAdapter;
+        private TextView mTextHeaderInboxNotification;
+        private TextView mTextHeaderInboxStatus;
 
+        private bool mInboxStatusAscending;
+        private bool mInboxNotificationAscending;
+        
 
 
 
@@ -39,8 +44,20 @@ namespace CerberusAndroid
             mSearchInbox = FindViewById<EditText>(Resource.Id.eTxtSearchInbox);
             mContainer = FindViewById<LinearLayout>(Resource.Id.containerInbox);
 
+            mTextHeaderInboxNotification = FindViewById<TextView>(Resource.Id.txtHeaderInboxNotification);
+            mTextHeaderInboxStatus = FindViewById<TextView>(Resource.Id.txtHeaderInboxStatus);
+
+            //Filter Event Listener for when the user hit the tabs
+            mTextHeaderInboxStatus.Click += mTextHeaderInboxStatus_Click;
+            mTextHeaderInboxNotification.Click += mTextHeaderInboxNotification_Click; ;
+
+
+
             //Makes the search bar invisible
             mSearchInbox.Alpha = 0;
+
+            //Since the edit text is behind the headers it must be brought to the front in order to make the headers clickable
+            mContainer.BringToFront();
 
             //Call the search bar query
             mSearchInbox.TextChanged += mSearch_TextChanged;
@@ -51,6 +68,58 @@ namespace CerberusAndroid
 
             EmployeeInboxAdapter adapter = new EmployeeInboxAdapter(this, Resource.Layout.row_inbox, mInbox);
             mInboxListView.Adapter = adapter;
+
+        }
+
+        private void mTextHeaderInboxNotification_Click(object sender, EventArgs e)
+        {
+            List<ProjectCerberusInbox> filtereredInbox;
+
+            if (!mInboxNotificationAscending)
+            {
+                filtereredInbox = (from inbox in mInbox orderby inbox.InboxNotification select inbox).ToList<ProjectCerberusInbox>();
+                //Refresh the listview adapter
+                EmployeeInboxAdapter adapter = new EmployeeInboxAdapter(this, Resource.Layout.row_inbox, filtereredInbox);
+                mInboxListView.Adapter = adapter;
+            }
+            else
+            {
+                filtereredInbox = (from inbox in mInbox orderby inbox.InboxNotification descending select inbox).ToList<ProjectCerberusInbox>();
+                //Refresh the listview adapter
+                EmployeeInboxAdapter adapter = new EmployeeInboxAdapter(this, Resource.Layout.row_inbox, filtereredInbox);
+                mInboxListView.Adapter = adapter;
+
+            }
+
+            mInboxNotificationAscending = !mInboxNotificationAscending;
+
+
+        }
+
+        private void mTextHeaderInboxStatus_Click(object sender, EventArgs e)
+        {
+            List<ProjectCerberusInbox> filtereredInbox;
+
+            if (!mInboxStatusAscending)
+            {
+                filtereredInbox = (from inbox in mInbox orderby inbox.InboxStatus select inbox).ToList<ProjectCerberusInbox>();
+                //Refresh the listview adapter
+                EmployeeInboxAdapter adapter = new EmployeeInboxAdapter(this, Resource.Layout.row_inbox, filtereredInbox);
+                mInboxListView.Adapter = adapter;
+            }
+            else
+            {
+                filtereredInbox = (from inbox in mInbox orderby inbox.InboxStatus descending select inbox).ToList<ProjectCerberusInbox>();
+                //Refresh the listview adapter
+                EmployeeInboxAdapter adapter = new EmployeeInboxAdapter(this, Resource.Layout.row_inbox, filtereredInbox);
+                mInboxListView.Adapter = adapter;
+
+            }
+
+            mInboxStatusAscending = !mInboxStatusAscending;
+
+
+
 
         }
 
@@ -102,6 +171,8 @@ namespace CerberusAndroid
                 //Search Icon has been clicked
                 case Resource.Id.search: // this id is in the menu folder under actionbar.xml
 
+                    //Make the SearchBar visiable
+                    mSearchInbox.Visibility = ViewStates.Visible;
 
                     //Check flag if its animating
 

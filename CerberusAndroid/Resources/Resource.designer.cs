@@ -103,32 +103,32 @@ namespace CerberusAndroid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f08001b
-			public const int AddButton = 2131230747;
+			// aapt resource value: 0x7f08001d
+			public const int AddButton = 2131230749;
 			
-			// aapt resource value: 0x7f080034
-			public const int CancelDeleteButton = 2131230772;
-			
-			// aapt resource value: 0x7f08002e
-			public const int NameLabel = 2131230766;
-			
-			// aapt resource value: 0x7f08002f
-			public const int NameText = 2131230767;
+			// aapt resource value: 0x7f080036
+			public const int CancelDeleteButton = 2131230774;
 			
 			// aapt resource value: 0x7f080030
-			public const int NotesLabel = 2131230768;
+			public const int NameLabel = 2131230768;
 			
 			// aapt resource value: 0x7f080031
-			public const int NotesText = 2131230769;
+			public const int NameText = 2131230769;
+			
+			// aapt resource value: 0x7f080032
+			public const int NotesLabel = 2131230770;
 			
 			// aapt resource value: 0x7f080033
-			public const int SaveButton = 2131230771;
+			public const int NotesText = 2131230771;
 			
-			// aapt resource value: 0x7f08002d
-			public const int TaskDetailsHeader = 2131230765;
+			// aapt resource value: 0x7f080035
+			public const int SaveButton = 2131230773;
 			
-			// aapt resource value: 0x7f08001c
-			public const int TaskList = 2131230748;
+			// aapt resource value: 0x7f08002f
+			public const int TaskDetailsHeader = 2131230767;
+			
+			// aapt resource value: 0x7f08001e
+			public const int TaskList = 2131230750;
 			
 			// aapt resource value: 0x7f080002
 			public const int btnDialogLogIn = 2131230722;
@@ -148,44 +148,44 @@ namespace CerberusAndroid
 			// aapt resource value: 0x7f080010
 			public const int btnEmployeeProfile = 2131230736;
 			
-			// aapt resource value: 0x7f080022
-			public const int btnLogIn = 2131230754;
-			
 			// aapt resource value: 0x7f080024
-			public const int btnSignUpWithEmail = 2131230756;
+			public const int btnLogIn = 2131230756;
 			
-			// aapt resource value: 0x7f080032
-			public const int chkDone = 2131230770;
+			// aapt resource value: 0x7f080026
+			public const int btnSignUpWithEmail = 2131230758;
+			
+			// aapt resource value: 0x7f080034
+			public const int chkDone = 2131230772;
 			
 			// aapt resource value: 0x7f080011
 			public const int containerInbox = 2131230737;
 			
-			// aapt resource value: 0x7f080021
-			public const int demoImageView = 2131230753;
+			// aapt resource value: 0x7f080023
+			public const int demoImageView = 2131230755;
 			
-			// aapt resource value: 0x7f080013
-			public const int eTxtSearchInbox = 2131230739;
-			
-			// aapt resource value: 0x7f08001e
-			public const int eventDateItemTxtView = 2131230750;
+			// aapt resource value: 0x7f080015
+			public const int eTxtSearchInbox = 2131230741;
 			
 			// aapt resource value: 0x7f080020
-			public const int eventDateTextView = 2131230752;
+			public const int eventDateItemTxtView = 2131230752;
 			
-			// aapt resource value: 0x7f08001d
-			public const int eventNameItemTxtViewId = 2131230749;
+			// aapt resource value: 0x7f080022
+			public const int eventDateTextView = 2131230754;
 			
 			// aapt resource value: 0x7f08001f
-			public const int eventNameTextView = 2131230751;
+			public const int eventNameItemTxtViewId = 2131230751;
+			
+			// aapt resource value: 0x7f080021
+			public const int eventNameTextView = 2131230753;
 			
 			// aapt resource value: 0x7f08000a
 			public const int imageView1 = 2131230730;
 			
-			// aapt resource value: 0x7f080026
-			public const int item_subtitle = 2131230758;
+			// aapt resource value: 0x7f080028
+			public const int item_subtitle = 2131230760;
 			
-			// aapt resource value: 0x7f080027
-			public const int item_title = 2131230759;
+			// aapt resource value: 0x7f080029
+			public const int item_title = 2131230761;
 			
 			// aapt resource value: 0x7f080009
 			public const int linearLayout1 = 2131230729;
@@ -196,23 +196,23 @@ namespace CerberusAndroid
 			// aapt resource value: 0x7f08000d
 			public const int linearLayout3 = 2131230733;
 			
-			// aapt resource value: 0x7f080012
-			public const int listViewInbox = 2131230738;
-			
-			// aapt resource value: 0x7f080018
-			public const int listViewUpcomingEvents = 2131230744;
-			
-			// aapt resource value: 0x7f080017
-			public const int llContainer = 2131230743;
-			
-			// aapt resource value: 0x7f080035
-			public const int lstItemTask = 2131230773;
-			
 			// aapt resource value: 0x7f080014
-			public const int pastEventsListView = 2131230740;
+			public const int listViewInbox = 2131230740;
 			
-			// aapt resource value: 0x7f080025
-			public const int progressBar1 = 2131230757;
+			// aapt resource value: 0x7f08001a
+			public const int listViewUpcomingEvents = 2131230746;
+			
+			// aapt resource value: 0x7f080019
+			public const int llContainer = 2131230745;
+			
+			// aapt resource value: 0x7f080037
+			public const int lstItemTask = 2131230775;
+			
+			// aapt resource value: 0x7f080016
+			public const int pastEventsListView = 2131230742;
+			
+			// aapt resource value: 0x7f080027
+			public const int progressBar1 = 2131230759;
 			
 			// aapt resource value: 0x7f080007
 			public const int sample_content_fragment = 2131230727;
@@ -220,11 +220,11 @@ namespace CerberusAndroid
 			// aapt resource value: 0x7f080006
 			public const int sample_main_layout = 2131230726;
 			
-			// aapt resource value: 0x7f080036
-			public const int search = 2131230774;
+			// aapt resource value: 0x7f080038
+			public const int search = 2131230776;
 			
-			// aapt resource value: 0x7f080019
-			public const int sliding_tabs = 2131230745;
+			// aapt resource value: 0x7f08001b
+			public const int sliding_tabs = 2131230747;
 			
 			// aapt resource value: 0x7f080003
 			public const int txtEmail = 2131230723;
@@ -232,32 +232,38 @@ namespace CerberusAndroid
 			// aapt resource value: 0x7f08000c
 			public const int txtEmployeeGreetings = 2131230732;
 			
+			// aapt resource value: 0x7f080012
+			public const int txtHeaderInboxNotification = 2131230738;
+			
+			// aapt resource value: 0x7f080013
+			public const int txtHeaderInboxStatus = 2131230739;
+			
+			// aapt resource value: 0x7f08002c
+			public const int txtInboxDate = 2131230764;
+			
 			// aapt resource value: 0x7f08002a
-			public const int txtInboxDate = 2131230762;
+			public const int txtInboxNotification = 2131230762;
 			
-			// aapt resource value: 0x7f080028
-			public const int txtInboxNotification = 2131230760;
+			// aapt resource value: 0x7f08002b
+			public const int txtInboxStatus = 2131230763;
 			
-			// aapt resource value: 0x7f080029
-			public const int txtInboxStatus = 2131230761;
-			
-			// aapt resource value: 0x7f080023
-			public const int txtOr = 2131230755;
+			// aapt resource value: 0x7f080025
+			public const int txtOr = 2131230757;
 			
 			// aapt resource value: 0x7f080004
 			public const int txtPassword = 2131230724;
 			
-			// aapt resource value: 0x7f080016
-			public const int txtUpComingEventDate = 2131230742;
+			// aapt resource value: 0x7f080018
+			public const int txtUpComingEventDate = 2131230744;
 			
-			// aapt resource value: 0x7f080015
-			public const int txtUpComingEventName = 2131230741;
+			// aapt resource value: 0x7f080017
+			public const int txtUpComingEventName = 2131230743;
 			
-			// aapt resource value: 0x7f08002c
-			public const int txtUpcomingEventDate = 2131230764;
+			// aapt resource value: 0x7f08002e
+			public const int txtUpcomingEventDate = 2131230766;
 			
-			// aapt resource value: 0x7f08002b
-			public const int txtUpcomingEventName = 2131230763;
+			// aapt resource value: 0x7f08002d
+			public const int txtUpcomingEventName = 2131230765;
 			
 			// aapt resource value: 0x7f080000
 			public const int txtUsername = 2131230720;
@@ -265,8 +271,8 @@ namespace CerberusAndroid
 			// aapt resource value: 0x7f080001
 			public const int txtUsernamePassword = 2131230721;
 			
-			// aapt resource value: 0x7f08001a
-			public const int viewpager = 2131230746;
+			// aapt resource value: 0x7f08001c
+			public const int viewpager = 2131230748;
 			
 			static Id()
 			{

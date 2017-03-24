@@ -16,6 +16,7 @@
             android:weightSum="75">
             <TextView
                 android:text="Notification"
+                android:id="@+id/txtHeaderInboxNotification"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_weight="25"
@@ -24,6 +25,7 @@
                 android:textSize="16sp" />
             <TextView
                 android:text="Status"
+                android:id="@+id/txtHeaderInboxStatus"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_weight="25"
@@ -57,5 +59,6 @@
         android:layout_width="match_parent"
         android:background="@drawable/edit_text_style"
         android:hint="Search Inbox"
+        android:visibility="invisible"
         android:textColor="#000" />
 </FrameLayout>

@@ -19,8 +19,7 @@ namespace CerberusAndroid
         private int mRowLayout;
         private List<ProjectCerberusEvent> mUpcomingEvents;
         private int[] mAlternatingColors;
-        private SlidingTabsFragment.SamplePagerAdapter samplePagerAdapter;
-        private int row_upcomingEvent;
+      
 
         public EmployeeUpcomingEventsAdapter(Context context, int rowLayout, List<ProjectCerberusEvent> upComingEvents)
         {

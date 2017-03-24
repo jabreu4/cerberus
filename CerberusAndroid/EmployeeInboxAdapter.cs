@@ -19,8 +19,7 @@ namespace CerberusAndroid
         private int mRowLayout;
         private List<ProjectCerberusInbox> mInbox;
         private int[] mAlternatingColors;
-        private SlidingTabsFragment.SamplePagerAdapter samplePagerAdapter;
-        private int row_upcomingEvent;
+       
 
         public EmployeeInboxAdapter(Context context, int rowLayout, List<ProjectCerberusInbox> inbox)
         {
