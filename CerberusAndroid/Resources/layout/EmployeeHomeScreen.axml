@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:id="@+id/linearLayout2">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="106.0dp"
+        android:id="@+id/linearLayout1"
+        android:layout_marginBottom="62.0dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ImageView
+            android:src="@drawable/cerberuslogo"
+            android:layout_width="198.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView1" />
+        <ImageButton
+            android:src="@drawable/mail"
+            android:layout_width="117.0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ButtonLogInStyle"
+            android:id="@+id/btnEmployeeInbox"
+            android:layout_marginLeft="50.0dp"
+            android:layout_marginTop="10.0dp" />
+    </LinearLayout>
+    <TextView
+        android:text="Welcome ! Username"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="61.0dp"
+        android:id="@+id/txtEmployeeGreetings"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="322.0dp"
+        android:id="@+id/linearLayout3">
+        <Button
+            android:text="Events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ButtonSignUpStyle"
+            android:id="@+id/btnEmployeeEvents"
+            android:layout_marginBottom="20.0dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginLeft="20.0dp"
+            android:layout_marginRight="20.0dp" />
+        <Button
+            android:text="History"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ButtonSignUpStyle"
+            android:id="@+id/btnEmployeeHistory"
+            android:layout_marginBottom="20.0dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20.0dp"
+            android:layout_marginRight="20.0dp" />
+        <Button
+            android:text="View Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ButtonSignUpStyle"
+            android:id="@+id/btnEmployeeProfile"
+            android:layout_marginBottom="20.0dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20.0dp"
+            android:layout_marginRight="20.0dp" />
+    </LinearLayout>
+</LinearLayout>
