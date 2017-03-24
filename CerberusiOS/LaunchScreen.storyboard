@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="48" translatesAutoresizingMaskIntoConstraints="NO" image="logo-cerberus-color.png">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <variation key="heightClass=regular-widthClass=compact"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="63" firstItem="Ze5-6b-2t3" firstAttribute="trailing" secondItem="48" secondAttribute="trailing"/>
+                            <constraint id="64" firstItem="Ze5-6b-2t3" firstAttribute="bottom" secondItem="48" secondAttribute="bottom"/>
+                            <constraint id="67" firstItem="48" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading"/>
+                            <constraint id="69" firstItem="48" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="63"/>
+                                <exclude reference="64"/>
+                                <exclude reference="67"/>
+                                <exclude reference="69"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="63"/>
+                                <include reference="64"/>
+                                <include reference="67"/>
+                                <include reference="69"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Default-568h.png" width="320" height="568"/>
+        <image name="Default.png" width="320" height="480"/>
+        <image name="icon-29.png" width="29" height="29"/>
+        <image name="icon-50.png" width="50" height="50"/>
+        <image name="icon-57.png" width="57" height="57"/>
+        <image name="icon-58.png" width="58" height="58"/>
+        <image name="icon-72.png" width="72" height="72"/>
+        <image name="icon-100.png" width="100" height="100"/>
+        <image name="icon-114.png" width="114" height="114"/>
+        <image name="icon-144.png" width="144" height="144"/>
+        <image name="logo-cerberus-color.png" width="2550" height="2299"/>
+        <image name="logo-cerberus-color-medium.png" width="665" height="600"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedOrientationMetrics key="orientation"/>
+    </simulatedMetricsContainer>
+</document>

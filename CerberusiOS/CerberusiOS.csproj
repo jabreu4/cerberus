@@ -24,7 +24,7 @@
     <ConsolePause>False</ConsolePause>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>True</MtouchDebug>
-    <MtouchArch>i386</MtouchArch>
+    <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchUseSGen>true</MtouchUseSGen>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
 <CodesignKey>iPhone Developer</CodesignKey>
@@ -55,7 +55,7 @@
     </IpaPackageName>
     <MtouchUseSGen>true</MtouchUseSGen>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
-    <MtouchArch>ARMv7, ARMv7s</MtouchArch>
+    <MtouchArch>ARMv7, ARMv7s, ARM64</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -128,6 +128,27 @@
     <Compile Include="HomeScreen.cs" />
     <Compile Include="EditingSource.cs" />
     <Compile Include="TodoItemDialog.cs" />
+    <Compile Include="HomeScreenViewController.cs" />
+    <Compile Include="HomeScreenViewController.designer.cs">
+      <DependentUpon>HomeScreenViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginScreenViewController.cs" />
+    <Compile Include="LoginScreenViewController.designer.cs">
+      <DependentUpon>LoginScreenViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InboxViewController.cs" />
+    <Compile Include="InboxViewController.designer.cs">
+      <DependentUpon>InboxViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableSource.cs" />
+    <Compile Include="ViewMessageController.cs" />
+    <Compile Include="ViewMessageController.designer.cs">
+      <DependentUpon>ViewMessageController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profileViewController.cs" />
+    <Compile Include="profileViewController.designer.cs">
+      <DependentUpon>profileViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -144,12 +165,19 @@
     <BundleResource Include="Resources\icon-100.png" />
     <BundleResource Include="Resources\icon-114.png" />
     <BundleResource Include="Resources\icon-144.png" />
+    <BundleResource Include="Resources\logo-cerberus-color.png" />
+    <BundleResource Include="Resources\logo-cerberus-color-medium.png" />
+    <BundleResource Include="Resources\profile-default.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CerberusPortableLibrary\CerberusPortableLibrary.csproj">
       <Project>{6611D648-7464-4266-AC13-EB93935B9AD6}</Project>
       <Name>CerberusPortableLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Storyboard.storyboard" />
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\SQLitePCL.raw_basic.0.8.6\build\Xamarin.iOS10\SQLitePCL.raw_basic.targets" Condition="Exists('..\packages\SQLitePCL.raw_basic.0.8.6\build\Xamarin.iOS10\SQLitePCL.raw_basic.targets')" />
