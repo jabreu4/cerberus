@@ -95,15 +95,11 @@ namespace CerberusAndroid
                     upcomingEventsListView.ItemClick += (sender, e) =>
                     {
                         string str = upComingEvents[e.Position].ToString();
-                        Intent intent = new Intent(view.Context, typeof(EmployeePastEventDetails));
+                        Intent intent = new Intent(view.Context, typeof(EmployeeUpcomingEventsDetails));
                
                         intent.PutExtra("NombreDeEvento", upComingEvents[e.Position].EventName);
                         intent.PutExtra("FechaDeEvento", upComingEvents[e.Position].EventDate);
                         view.Context.StartActivity(intent);
-
-
-
-
                     };
 
 

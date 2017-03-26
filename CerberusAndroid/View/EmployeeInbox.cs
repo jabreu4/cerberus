@@ -69,6 +69,24 @@ namespace CerberusAndroid
             EmployeeInboxAdapter adapter = new EmployeeInboxAdapter(this, Resource.Layout.row_inbox, mInbox);
             mInboxListView.Adapter = adapter;
 
+
+
+            mInboxListView.ItemClick += InboxListView_ItemClick;
+
+
+
+
+
+
+
+
+
+        }
+
+        private void InboxListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(EmployeeInboxDetails));
+            this.StartActivity(intent);
         }
 
         private void mTextHeaderInboxNotification_Click(object sender, EventArgs e)

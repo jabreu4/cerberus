@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:id="@+id/linearLayout2">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="102.0dp"
+        android:id="@+id/linearLayout1"
+        android:layout_marginBottom="62.0dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <TextView
+            android:text="MESSAGE"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="191.0dp"
+            android:textColor="#000"
+            android:layout_height="28.5dp"
+            android:id="@+id/textView1"
+            android:layout_marginTop="35.0dp"
+            android:layout_marginLeft="35.0dp" />
+        <ImageView
+            android:src="@drawable/cerberusLogo"
+            android:layout_width="152.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView1" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="84.0dp"
+        android:id="@+id/linearLayout3">
+        <TextView
+            android:text="Subject: Event Canceled"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:textColor="#000"
+            android:layout_height="match_parent"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="35.0dp"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="267.0dp"
+        android:id="@+id/linearLayout4">
+        <TextView
+            android:text="Body: The Event of the monster truck palooza 2016 has been canceled. Please contact the office manager at 787-777-8888 or send an email to ccspart2@gmail.com. Sorry for the inconvenience that this might bring"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:textColor="#000"
+            android:layout_height="match_parent"
+            android:id="@+id/textView2"
+            android:gravity="center_horizontal"
+            android:textAlignment="center" />
+    </LinearLayout>
+</LinearLayout>

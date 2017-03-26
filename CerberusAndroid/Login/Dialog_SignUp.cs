@@ -16,25 +16,25 @@ namespace CerberusAndroid
     public class OnSignEventArgs: EventArgs
     {
         //variables
-        private string mEmail;
-        private string mPassword;
+        private string mNewPassword;
+        private string mConfirmPassword;
 
         //Getter and setter methods
-        public string Email
+        public string NewPassword
         {
-            get { return mEmail; }
-            set { mEmail = value; }
+            get { return mNewPassword; }
+            set { mNewPassword = value; }
         }
-        public string Passowrd
+        public string ConfirmPassword
         {
-            get { return mPassword; }
-            set { mPassword = value; }
+            get { return mConfirmPassword; }
+            set { mConfirmPassword = value; }
         }
         //Constructor
-        public OnSignEventArgs(string email, string password)   : base() //the base calls the super class constructor which is EventArgs
+        public OnSignEventArgs(string newPassword, string confirmPassword)   : base() //the base calls the super class constructor which is EventArgs
         {
-            Email = email;
-            Passowrd = password;
+            NewPassword = newPassword;
+            ConfirmPassword = confirmPassword;
         }
 
 
@@ -44,8 +44,8 @@ namespace CerberusAndroid
     class Dialog_SignUp : DialogFragment
     {
         //Variables
-        private EditText mEmail;
-        private EditText mPassword;
+        private EditText mNewPassword;
+        private EditText mConfirmPassword;
         private Button mBtnDialogSignUp;
         //Variable to broadcast the event of our custom class
         public event EventHandler<OnSignEventArgs> mOnSignUpComplete;
@@ -57,16 +57,16 @@ namespace CerberusAndroid
             var view = inflater.Inflate(Resource.Layout.dialog_signup, container, false);
 
             //Instantiate the object from the view
-            mEmail = view.FindViewById<EditText>(Resource.Id.txtEmail);
-            mPassword = view.FindViewById<EditText>(Resource.Id.txtPassword);
-            mBtnDialogSignUp = view.FindViewById<Button>(Resource.Id.btnDialogSignUpWithEmail);
+            mNewPassword = view.FindViewById<EditText>(Resource.Id.txtNewPassword);
+            mConfirmPassword = view.FindViewById<EditText>(Resource.Id.txtConfirmPassword);
+            mBtnDialogSignUp = view.FindViewById<Button>(Resource.Id.btnSubmit);
 
             //Register the Sign UP button from the dialog fragment
             mBtnDialogSignUp.Click += (object sender, EventArgs e) =>
             {
                 //User has click the sign up button from the dialog. He has requested to resgiter with the email
                 //Broadcast to any subscriber that we got the request to subscribe the user
-                mOnSignUpComplete.Invoke(this, new OnSignEventArgs(mEmail.Text, mPassword.Text));
+                mOnSignUpComplete.Invoke(this, new OnSignEventArgs(mNewPassword.Text, mConfirmPassword.Text));
                 //Dismiss the Dialog Fragment
                 this.Dismiss();
             

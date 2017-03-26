@@ -16,9 +16,10 @@ namespace CerberusAndroid
          *                          Variables
          * 
          * **********************************************************************/
-        private Button mBtnSignUpWithEmail;
+      //  private Button mBtnSignUpWithEmail;
         private ProgressBar mProgressBar;
         private Button mBtnLogIn;
+        private TextView mForgotPassword;
 
 
         /*************************************************************************
@@ -31,17 +32,19 @@ namespace CerberusAndroid
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.LogIn);
+            SetContentView(Resource.Layout.EmployeeLogin);
 
             //Wire the Progress Bar
             mProgressBar = FindViewById<ProgressBar>(Resource.Id.progressBar1);
 
             //wire up the sign up button
-            mBtnSignUpWithEmail = FindViewById<Button>(Resource.Id.btnSignUpWithEmail);
+          //  mBtnSignUpWithEmail = FindViewById<Button>(Resource.Id.btnSignUpWithEmail);
             mBtnLogIn = FindViewById<Button>(Resource.Id.btnLogIn);
 
-            //Register the sign up with email button listener
-            mBtnSignUpWithEmail.Click += (object sender, EventArgs args) =>
+            mForgotPassword = FindViewById<TextView>(Resource.Id.txtForgotPassword);
+
+
+            mForgotPassword.Click += (object sender, EventArgs args) =>
             {
                 //Instantiate a Fragment transaction which in this case is the  SignUp transaction
                 FragmentTransaction transaction = FragmentManager.BeginTransaction();
@@ -51,12 +54,11 @@ namespace CerberusAndroid
                 signUpDialog.Show(transaction, "dialog fragment");
 
                 //Recive the broadcase from the signup and say hey i did get your request event, lets subscribe you
-                signUpDialog.mOnSignUpComplete += SignUpDialog_mOnSignUpComplete;
+                signUpDialog.mOnSignUpComplete += SignUpDialog_mOnSignUpComplete; ;
 
 
 
             };
-
             //Register the sign up with email button listener
             mBtnLogIn.Click += (object sender, EventArgs args) =>
             {
@@ -76,29 +78,26 @@ namespace CerberusAndroid
 
 
 
-
-
-
-
         }
 
-  
+     
+   
 
         private void LogInDialog_mOnLogInComplete(object sender, OnLogInEventArgs e)
         {
 
-            //The user has been authenticated and logged in, we send him to his employee page with the use of intent
-            //We must pass the username string to greet him on the homepage
 
+            //Log in success go to the homepage
             Intent intent = new Intent(this, typeof(EmployeeHomePage));
-            // el EventName es un key para referenciarlo en el otro activity
             intent.PutExtra("EmployeeUsername",e.Username);
             this.StartActivity(intent);
-            //Once we he is logged in we want to kill the log in process
             this.Finish();//finish the login screen
 
 
         }
+
+
+        
 
         private void SignUpDialog_mOnSignUpComplete(object sender, OnSignEventArgs e)
         {
@@ -125,8 +124,12 @@ namespace CerberusAndroid
             //string validatePassword = e.Passowrd;
             //string validateEmail = e.Email;
             //set alert for executing the task
+            
+       }
 
-        }
+
+   
+    
 
         //Handle the web request from the server
         private void ActLikeARequest()

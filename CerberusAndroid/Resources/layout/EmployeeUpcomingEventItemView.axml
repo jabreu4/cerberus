@@ -6,25 +6,139 @@
     android:background="@android:color/background_light"
     android:minWidth="25px"
     android:weightSum="100"
-    android:minHeight="25px">
-    <TextView
-        android:text="Event Name"
+    android:minHeight="25px"
+    android:id="@+id/linearLayout1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtUpComingEventName"
-        android:layout_centerInParent="true"
-        android:textColor="#000"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-    <TextView
-        android:text="Event Date"
+        android:layout_height="309.0dp"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="0.0dp"
+        android:layout_marginBottom="0.0dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="64.5dp"
+            android:id="@+id/linearLayout3">
+            <ImageView
+                android:src="@drawable/choliseo"
+                android:layout_width="195.0dp"
+                android:layout_height="73.5dp"
+                android:id="@+id/imageView2" />
+            <ImageView
+                android:src="@drawable/cerberusLogo"
+                android:layout_width="195.0dp"
+                android:layout_height="68.5dp"
+                android:id="@+id/imageView1" />
+        </LinearLayout>
+        <TextView
+            android:text="Event Name"
+            android:id="@+id/txtUpComingEventName"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="19.0dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginTop="20.0dp"
+            android:layout_marginRight="20.0dp"
+            android:layout_marginLeft="20.0dp"
+            android:textSize="15sp" />
+        <TextView
+            android:text="Event Location"
+            android:id="@+id/txtUpComingEventDate"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="19.0dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginTop="20.0dp"
+            android:layout_marginRight="20.0dp"
+            android:layout_marginLeft="20.0dp"
+            android:textSize="15sp" />
+        <TextView
+            android:text="Event Date"
+            android:id="@+id/txtUpComingEventDate"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="19.5dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginTop="20.0dp"
+            android:layout_marginRight="20.0dp"
+            android:layout_marginLeft="20.0dp"
+            android:textSize="15sp" />
+        <TextView
+            android:text="Event Hours"
+            android:id="@+id/txtUpComingEventHours"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="19.5dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginTop="20.0dp"
+            android:layout_marginRight="20.0dp"
+            android:layout_marginLeft="20.0dp"
+            android:textSize="15sp" />
+        <TextView
+            android:text="Event Arrival Time"
+            android:id="@+id/txtUpComingEventArrivalTime"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="16.0dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginTop="20.0dp"
+            android:layout_marginRight="20.0dp"
+            android:layout_marginLeft="20.0dp"
+            android:textSize="15sp" />
+        <TextView
+            android:text="Event Toxicity"
+            android:id="@+id/txtUpComingEventToxicity"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="22.0dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginTop="20.0dp"
+            android:layout_marginRight="20.0dp"
+            android:layout_marginLeft="20.0dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtUpComingEventDate"
-        android:layout_centerInParent="true"
-        android:textColor="#000"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="20sp" />
+        android:layout_height="93.5dp"
+        android:id="@+id/linearLayout4">
+        <Button
+            android:text="Attend"
+            android:layout_width="190.5dp"
+            android:background="@drawable/GreenButton"
+            android:layout_height="83.5dp"
+            android:id="@+id/btnAttendUpcmoingEvent"
+            android:layout_marginLeft="0.0dp" />
+        <Button
+            android:text="Decline"
+            android:layout_width="191.5dp"
+            android:background="@drawable/RedButton"
+            android:layout_height="84.5dp"
+            android:id="@+id/btnDeclineUpcomingEvent" />
+    </LinearLayout>
 </LinearLayout>
