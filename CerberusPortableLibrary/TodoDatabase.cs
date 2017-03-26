@@ -92,8 +92,12 @@ namespace Cerberus.PortableLibrary
 		{
 			lock (locker)
 			{
-				/***********************************************************************************/
-				return Items;
+				/**********************************************************************************/
+				if (Items == null)
+				{
+					Items = new List<TodoItem>();
+				}
+					return Items;
 				/***********************************************************************************/
 
 			}
@@ -112,7 +116,7 @@ namespace Cerberus.PortableLibrary
 			}
 
 			return null;
-				/***********************************************************************************/
+			/***********************************************************************************/
 		}
 
 		public async Task<TodoItem> SaveItem(TodoItem item)
@@ -129,7 +133,7 @@ namespace Cerberus.PortableLibrary
 				if (String.IsNullOrEmpty(item.ID))
 				{
 					await todoTable.InsertAsync(item); // Insert a new TodoItem into the local database.
-			             							   //item.ID = blablabla;
+													   //item.ID = blablabla;
 					Items.Add(item);
 				}
 				else
@@ -143,18 +147,18 @@ namespace Cerberus.PortableLibrary
 			}
 
 			return item; //Todo convert guid to 128bit decimal
-					  //return item.ID;
-			/***********************************************************************************/
+						 //return item.ID;
+						 /***********************************************************************************/
 
 		}
 
 		public int DeleteItem(TodoItem item)
 		{
-				/***********************************************************************************/
-				Items.Remove(item);
-				todoTable.DeleteAsync(item); // Delete a TodoItem into the local database
-				return -1;
-				/***********************************************************************************/
+			/***********************************************************************************/
+			Items.Remove(item);
+			todoTable.DeleteAsync(item); // Delete a TodoItem into the local database
+			return -1;
+			/***********************************************************************************/
 		}
 	}
 }
