@@ -14,6 +14,7 @@ namespace Cerberus
 
         public InboxViewController (IntPtr handle) : base (handle)
         {
+			this.Title = "InboxView";
         }
 
 		public override void ViewDidLoad()
@@ -23,25 +24,30 @@ namespace Cerberus
 			string[] tableItems = new string[] { "Event Canceled", "Event Completed", "Review Pending", "Attendance Incomplete" };
 			TableSource source = new TableSource(tableItems, this);
 
-			source.NewPageEvent += HandleNewPage;
-
+			//source.NewPageEvent += HandleNewPage;
+			//msgsTableView.
 			msgsTableView.Source = source;
 
 			Add(msgsTableView);
 		}
 
-		void HandleNewPage(object sender, EventArgs e)
+		public void rowSelected(UITableView tableView, NSIndexPath indexPath)
 		{
 			//this.NavigationController.PushViewController(new ViewMessageController((System.IntPtr)0), true);
 			// then open the detail view to edit it
-			var messageView = Storyboard.InstantiateViewController("messageView") as ViewMessageController;
+			//var messageView = Storyboard.InstantiateViewController("messageView") as ViewMessageController;
 			//detail.SetTask(this, newChore);
-			NavigationController.PushViewController(messageView, true);
+			//NavigationController.PushViewController(messageView, true);
+
+			UIStoryboard board = UIStoryboard.FromName("Storyboard", null);
+			UIViewController ctrl = (UIViewController)board.InstantiateViewController("messageView");
+			//ctrl.ModalTransitionStyle = UIModalTransitionStyle.FlipHorizontal;
+			this.PresentModalViewController(ctrl, true);
 		}
 
 		partial void BackButton_TouchUpInside(UIButton sender)
 		{
-			//throw new NotImplementedException();
+			this.DismissModalViewController(true);
 		}
 
 	}

@@ -149,25 +149,55 @@
     <Compile Include="profileViewController.designer.cs">
       <DependentUpon>profileViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="CompanyInfoViewController.cs" />
+    <Compile Include="CompanyInfoViewController.designer.cs">
+      <DependentUpon>CompanyInfoViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PastEventsViewController.cs" />
+    <Compile Include="PastEventsViewController.designer.cs">
+      <DependentUpon>PastEventsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpcomingEventsViewController.cs" />
+    <Compile Include="UpcomingEventsViewController.designer.cs">
+      <DependentUpon>UpcomingEventsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptedEventsViewController.cs" />
+    <Compile Include="AcceptedEventsViewController.designer.cs">
+      <DependentUpon>AcceptedEventsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RejectedEventsViewController.cs" />
+    <Compile Include="RejectedEventsViewController.designer.cs">
+      <DependentUpon>RejectedEventsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPastEventViewController.cs" />
+    <Compile Include="ViewPastEventViewController.designer.cs">
+      <DependentUpon>ViewPastEventViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUpcomingEventViewController.cs" />
+    <Compile Include="ViewUpcomingEventViewController.designer.cs">
+      <DependentUpon>ViewUpcomingEventViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAcceptedEventViewController.cs" />
+    <Compile Include="ViewAcceptedEventViewController.designer.cs">
+      <DependentUpon>ViewAcceptedEventViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRejectedEventViewController.cs" />
+    <Compile Include="ViewRejectedEventViewController.designer.cs">
+      <DependentUpon>ViewRejectedEventViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JSBadgeView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Default-568h%402x.png" />
-    <BundleResource Include="Resources\Default.png" />
-    <BundleResource Include="Resources\Default%402x.png" />
-    <BundleResource Include="Resources\icon-29.png" />
-    <BundleResource Include="Resources\icon-50.png" />
-    <BundleResource Include="Resources\icon-57.png" />
-    <BundleResource Include="Resources\icon-58.png" />
-    <BundleResource Include="Resources\icon-72.png" />
-    <BundleResource Include="Resources\icon-100.png" />
-    <BundleResource Include="Resources\icon-114.png" />
-    <BundleResource Include="Resources\icon-144.png" />
     <BundleResource Include="Resources\logo-cerberus-color.png" />
     <BundleResource Include="Resources\logo-cerberus-color-medium.png" />
     <BundleResource Include="Resources\profile-default.png" />
+    <BundleResource Include="Resources\message-icon.png" />
+    <BundleResource Include="Resources\building-icon.png" />
+    <BundleResource Include="Resources\accept-icon.png" />
+    <BundleResource Include="Resources\reject-icon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CerberusPortableLibrary\CerberusPortableLibrary.csproj">
@@ -178,6 +208,22 @@
   <ItemGroup>
     <InterfaceDefinition Include="Storyboard.storyboard" />
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-57x57%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-57x57%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\SQLitePCL.raw_basic.0.8.6\build\Xamarin.iOS10\SQLitePCL.raw_basic.targets" Condition="Exists('..\packages\SQLitePCL.raw_basic.0.8.6\build\Xamarin.iOS10\SQLitePCL.raw_basic.targets')" />
