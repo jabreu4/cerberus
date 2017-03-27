@@ -1,19 +1,22 @@
 ﻿<Properties StartupConfiguration="{08FAE550-E302-4022-A871-17E0462E99F3}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CerberusiOS/HomeScreenViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CerberusPortableLibrary/packages.config">
     <Files>
-      <File FileName="CerberusiOS/JSBadgeView.cs" Line="201" Column="26" />
-      <File FileName="CerberusiOS/HomeScreenViewController.cs" Line="31" Column="21" />
+      <File FileName="CerberusiOS/HomeScreen.cs" Line="119" Column="34" />
+      <File FileName="CerberusPortableLibrary/TodoItem.cs" Line="14" Column="3" />
+      <File FileName="CerberusPortableLibrary/TodoItemManager.cs" Line="17" Column="32" />
+      <File FileName="CerberusPortableLibrary/TodoItemRepository.cs" Line="25" Column="4" />
+      <File FileName="CerberusiOS/AppDelegate.cs" Line="4" Column="18" />
+      <File FileName="CerberusPortableLibrary/TodoDatabase.cs" Line="34" Column="3" />
+      <File FileName="CerberusPortableLibrary/EventItem.cs" Line="15" Column="40" />
+      <File FileName="CerberusPortableLibrary/packages.config" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/Pepe/Desktop/ProjectCerberusTEMP/CerberusPortableLibrary/TodoDatabase.cs" relfile="CerberusPortableLibrary/TodoDatabase.cs" line="74" column="1" />
-      <Breakpoint file="/Users/Pepe/Desktop/ProjectCerberusTEMP/CerberusPortableLibrary/TodoDatabase.cs" relfile="CerberusPortableLibrary/TodoDatabase.cs" line="98" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.CerberusAndroid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.ItemProperties.CerberusiOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.400e900eb7f159bf969be2318f779048bfacec96" />
+  <MonoDevelop.Ide.ItemProperties.CerberusAndroid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.ItemProperties.CerberusiOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.51B20803-523E-4479-96C5-9DA0B8372A00" />
   <MultiItemStartupConfigurations />
 </Properties>
