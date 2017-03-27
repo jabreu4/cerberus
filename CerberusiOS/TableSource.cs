@@ -8,12 +8,11 @@ public class TableSource : UITableViewSource
 
 	protected string[] tableItems;
 	protected string cellIdentifier = "TableCell";
-	InboxViewController owner;
+	UIViewController owner;
 
 	public delegate void NewPageHandler(object sender, EventArgs e);
-	public event NewPageHandler NewPageEvent;
 
-	public TableSource(string[] items, InboxViewController owner)
+	public TableSource(string[] items, UIViewController owner)
 	{
 		tableItems = items;
 		this.owner = owner;
@@ -33,15 +32,37 @@ public class TableSource : UITableViewSource
 	public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 	{
 		
-		UIAlertController okAlertController = UIAlertController.Create("Message", tableItems[indexPath.Row], UIAlertControllerStyle.Alert);
-		okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
-		owner.PresentViewController(okAlertController, true, null);
+		//UIAlertController okAlertController = UIAlertController.Create("Message", tableItems[indexPath.Row], UIAlertControllerStyle.Alert);
+		//okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+		//owner.PresentViewController(okAlertController, true, null);
 
 		tableView.DeselectRow(indexPath, true);
 
-		//NewPageEvent(this, new EventArgs());
-		//var messageView = Storyboard.InstantiateViewController("messageView") as ViewMessageController;
-		//NavigationController.PushViewController(messageView, true);
+		if (this.owner.Title.Equals("InboxView"))
+		{
+			InboxViewController temp = (Cerberus.InboxViewController)this.owner;
+			temp.rowSelected(tableView, indexPath);
+		}
+		else if (this.owner.Title.Equals("PastEventsView"))
+		{
+			PastEventsViewController temp = (Cerberus.PastEventsViewController)this.owner;
+			temp.rowSelected(tableView, indexPath);
+		}
+		else if (this.owner.Title.Equals("Upcoming"))
+		{
+			UpcomingEventsViewController temp = (Cerberus.UpcomingEventsViewController)this.owner;
+			temp.rowSelected(tableView, indexPath);
+		}
+		else if (this.owner.Title.Equals("Accepted"))
+		{
+			AcceptedEventsViewController temp = (Cerberus.AcceptedEventsViewController)this.owner;
+			temp.rowSelected(tableView, indexPath);
+		}
+		else if (this.owner.Title.Equals("Rejected"))
+		{
+			RejectedEventsViewController temp = (Cerberus.RejectedEventsViewController)this.owner;
+			temp.rowSelected(tableView, indexPath);
+		}
 
 	}
 
@@ -52,11 +73,34 @@ public class TableSource : UITableViewSource
 	{
 		// request a recycled cell to save memory
 		UITableViewCell cell = tableView.DequeueReusableCell(cellIdentifier);
+		//UITableViewCell cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellIdentifier);
+
 		// if there are no cells to reuse, create a new one
 		if (cell == null)
-			cell = new UITableViewCell(UITableViewCellStyle.Default, cellIdentifier);
+			cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellIdentifier);
 
 		cell.TextLabel.Text = tableItems[indexPath.Row];
+
+		if (this.owner.Title.Equals("PastEventsView"))
+		{
+			cell.DetailTextLabel.Text = "12/26/2016";
+			cell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
+		}
+		else if (this.owner.Title.Equals("Upcoming"))
+		{
+			cell.DetailTextLabel.Text = "04/26/2017";
+			cell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
+		}
+		else if (this.owner.Title.Equals("Accepted"))
+		{
+			cell.DetailTextLabel.Text = "04/11/2017";
+			cell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
+		}
+		else if (this.owner.Title.Equals("Rejected"))
+		{
+			cell.DetailTextLabel.Text = "04/05/2017";
+			cell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
+		}
 
 		return cell;
 	}

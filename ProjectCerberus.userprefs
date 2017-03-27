@@ -1,15 +1,11 @@
 ﻿<Properties StartupConfiguration="{08FAE550-E302-4022-A871-17E0462E99F3}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="CerberusiOS/HomeScreenViewController.cs">
     <Files>
-      <File FileName="CerberusiOS/AppDelegate.cs" Line="20" Column="1" />
-      <File FileName="CerberusiOS/Info.plist" />
-      <File FileName="CerberusiOS/InboxViewController.cs" Line="40" Column="63" />
-      <File FileName="CerberusiOS/TableSource.cs" Line="42" Column="41" />
-      <File FileName="CerberusiOS/ViewMessageController.cs" Line="7" Column="26" />
-      <File FileName="CerberusiOS/profileViewController.cs" Line="13" Column="21" />
+      <File FileName="CerberusiOS/JSBadgeView.cs" Line="201" Column="26" />
+      <File FileName="CerberusiOS/HomeScreenViewController.cs" Line="31" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/Pepe/Desktop/ProjectCerberusTEMP/CerberusPortableLibrary/TodoDatabase.cs" relfile="CerberusPortableLibrary/TodoDatabase.cs" line="74" column="1" />
@@ -18,6 +14,6 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.CerberusAndroid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.ItemProperties.CerberusiOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DB6FAC7F-A762-44A0-A95A-C9F450BFD075" />
+  <MonoDevelop.Ide.ItemProperties.CerberusiOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.400e900eb7f159bf969be2318f779048bfacec96" />
   <MultiItemStartupConfigurations />
 </Properties>

@@ -12,7 +12,7 @@ namespace Cerberus
 
 		partial void ProfileBackButton_TouchUpInside(UIButton sender)
 		{
-			//throw new NotImplementedException();
+			this.DismissModalViewController(true);
 		}
 	}
 }

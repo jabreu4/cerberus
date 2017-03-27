@@ -8,44 +8,66 @@
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController" automaticallyAdjustsScrollViewInsets="NO" autoresizesArchivedViewToFullSize="NO">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="48" translatesAutoresizingMaskIntoConstraints="NO" image="logo-cerberus-color.png">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <variation key="heightClass=regular-widthClass=compact"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <variation key="heightClass=regular-widthClass=compact" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES">
+                                    <mask key="constraints">
+                                        <include reference="130"/>
+                                        <include reference="131"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="130" firstAttribute="width" constant="320" relation="greaterThanOrEqual"/>
+                                    <constraint id="131" firstAttribute="height" constant="568" relation="greaterThanOrEqual"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="130"/>
+                                        <exclude reference="131"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                         </subviews>
-                        <constraints>
-                            <constraint id="63" firstItem="Ze5-6b-2t3" firstAttribute="trailing" secondItem="48" secondAttribute="trailing"/>
-                            <constraint id="64" firstItem="Ze5-6b-2t3" firstAttribute="bottom" secondItem="48" secondAttribute="bottom"/>
-                            <constraint id="67" firstItem="48" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading"/>
-                            <constraint id="69" firstItem="48" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="63"/>
-                                <exclude reference="64"/>
-                                <exclude reference="67"/>
-                                <exclude reference="69"/>
-                            </mask>
-                        </variation>
                         <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="48"/>
+                            </mask>
                             <mask key="constraints">
-                                <include reference="63"/>
-                                <include reference="64"/>
-                                <include reference="67"/>
-                                <include reference="69"/>
+                                <include reference="128"/>
+                                <include reference="129"/>
+                                <include reference="132"/>
+                                <include reference="134"/>
                             </mask>
                         </variation>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="48"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="128"/>
+                                <exclude reference="129"/>
+                                <exclude reference="132"/>
+                                <exclude reference="134"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="128" firstItem="Ze5-6b-2t3" firstAttribute="bottom" secondItem="48" secondAttribute="bottom"/>
+                            <constraint id="129" firstItem="Ze5-6b-2t3" firstAttribute="trailing" secondItem="48" secondAttribute="trailing"/>
+                            <constraint id="132" firstItem="48" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top"/>
+                            <constraint id="134" firstItem="48" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading"/>
+                        </constraints>
                     </view>
+                    <keyCommands/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,21 +75,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Default-568h.png" width="320" height="568"/>
-        <image name="Default.png" width="320" height="480"/>
-        <image name="icon-29.png" width="29" height="29"/>
-        <image name="icon-50.png" width="50" height="50"/>
-        <image name="icon-57.png" width="57" height="57"/>
-        <image name="icon-58.png" width="58" height="58"/>
-        <image name="icon-72.png" width="72" height="72"/>
-        <image name="icon-100.png" width="100" height="100"/>
-        <image name="icon-114.png" width="114" height="114"/>
-        <image name="icon-144.png" width="144" height="144"/>
         <image name="logo-cerberus-color.png" width="2550" height="2299"/>
         <image name="logo-cerberus-color-medium.png" width="665" height="600"/>
+        <image name="profile-default.png" width="512" height="512"/>
+        <image name="message-icon.png" width="512" height="356"/>
+        <image name="building-icon.png" width="512" height="512"/>
+        <image name="accept-icon.png" width="256" height="256"/>
+        <image name="reject-icon.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina55"/>
     </simulatedMetricsContainer>
+    <color key="tintColor" colorSpace="calibratedRGB" red="0.8784313725490196" green="0.11372549019607843" blue="0.054901960784313725" alpha="1"/>
 </document>
