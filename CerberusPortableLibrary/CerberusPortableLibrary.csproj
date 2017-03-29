@@ -38,6 +38,9 @@
     <Compile Include="TodoDatabase.cs" />
     <Compile Include="TodoItemRepository.cs" />
     <Compile Include="EventItem.cs" />
+    <Compile Include="CerberusDB.cs" />
+    <Compile Include="EventitemRepository.cs" />
+    <Compile Include="EventItemManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>

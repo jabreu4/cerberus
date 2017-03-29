@@ -5,7 +5,7 @@ namespace Cerberus.PortableLibrary
                   
 {
 	/// <summary>
-	/// Event business object
+	/// Class that defines a Event for the whole Application.
 	/// </summary>
 	public class EventItem
 	{

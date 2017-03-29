@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerberusAndroid", "Cerberus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerberusPortableLibrary", "CerberusPortableLibrary\CerberusPortableLibrary.csproj", "{6611D648-7464-4266-AC13-EB93935B9AD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerberusiPAD", "..\Cerberus Ipad (Git)\Cerberus\CerberusiPAD.csproj", "{A45EEB89-9E39-4AF8-8DCB-0A1CA075DE8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhone = Debug|iPhone
@@ -42,6 +44,14 @@ Global
 		{6611D648-7464-4266-AC13-EB93935B9AD6}.Release|iPhone.Build.0 = Release|Any CPU
 		{6611D648-7464-4266-AC13-EB93935B9AD6}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{6611D648-7464-4266-AC13-EB93935B9AD6}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{A45EEB89-9E39-4AF8-8DCB-0A1CA075DE8F}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{A45EEB89-9E39-4AF8-8DCB-0A1CA075DE8F}.Debug|iPhone.Build.0 = Debug|iPhone
+		{A45EEB89-9E39-4AF8-8DCB-0A1CA075DE8F}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{A45EEB89-9E39-4AF8-8DCB-0A1CA075DE8F}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{A45EEB89-9E39-4AF8-8DCB-0A1CA075DE8F}.Release|iPhone.ActiveCfg = Release|iPhone
+		{A45EEB89-9E39-4AF8-8DCB-0A1CA075DE8F}.Release|iPhone.Build.0 = Release|iPhone
+		{A45EEB89-9E39-4AF8-8DCB-0A1CA075DE8F}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{A45EEB89-9E39-4AF8-8DCB-0A1CA075DE8F}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
