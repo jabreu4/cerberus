@@ -13,21 +13,18 @@ namespace Cerberus.PortableLibrary
 		// SQLite attributes Not sure if needed for Azure DB
 		// [PrimaryKey, AutoIncrement]
 
-		//public string ID { get; set; }
-
-		public string EventID { get; set; }
-
-		public string EventName { get; set; }
-
-		public string EventTime { get; set; }
+		public string ID { get; set; }
 
 		public string Location { get; set; }
+        
+        public string EventName { get; set; }
 
-		public string PhotoID { get; set; }
+        public DateTime EventDuration { get; set; }
 
-		public string EventDuration { get; set; }
+        public DateTime EventDatetime { get; set; }
 
-		public bool Done { get; set; }  // TODO: add this field to the user-interface
+        public int PhotoId { get; set; }
+		
 
 	}
 
