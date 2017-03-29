@@ -1,4 +1,4 @@
-/*using Android.App;
+using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Widget;
@@ -17,7 +17,9 @@ namespace CerberusAndroid.Screens
 		Button cancelDeleteButton;
 		EditText notesTextEdit;
 		EditText nameTextEdit;
-		Button saveButton;
+        EditText eventNameTextEdit;
+
+        Button saveButton;
 		CheckBox doneCheckbox;
 
 		protected override void OnCreate (Bundle bundle)
@@ -33,7 +35,8 @@ namespace CerberusAndroid.Screens
 			SetContentView(Resource.Layout.TaskDetails);
 			nameTextEdit = FindViewById<EditText>(Resource.Id.NameText);
 			notesTextEdit = FindViewById<EditText>(Resource.Id.NotesText);
-			saveButton = FindViewById<Button>(Resource.Id.SaveButton);
+            eventNameTextEdit = FindViewById<EditText>(Resource.Id.EventNameText);
+            saveButton = FindViewById<Button>(Resource.Id.SaveButton);
 
 			// TODO: find the Checkbox control and set the value
 			doneCheckbox = FindViewById<CheckBox>(Resource.Id.chkDone);
@@ -47,6 +50,7 @@ namespace CerberusAndroid.Screens
 			
 			nameTextEdit.Text = task.Name; 
 			notesTextEdit.Text = task.Notes;
+            eventNameTextEdit.Text = task.EventName;
 
 			// button clicks 
 			cancelDeleteButton.Click += (sender, e) => { CancelDelete(); };
@@ -57,6 +61,7 @@ namespace CerberusAndroid.Screens
 		{
 			task.Name = nameTextEdit.Text;
 			task.Notes = notesTextEdit.Text;
+            task.EventName = eventNameTextEdit.Text;
 			//TODO: 
 			task.Done = doneCheckbox.Checked;
 
@@ -72,4 +77,4 @@ namespace CerberusAndroid.Screens
 			Finish();
 		}
 	}
-}*/
+}

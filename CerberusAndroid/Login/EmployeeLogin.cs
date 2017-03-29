@@ -9,15 +9,18 @@ using System.Threading;
 
 namespace CerberusAndroid
 {
-    [Activity(Label = "CerberusAndroid", MainLauncher = true, Icon = "@drawable/icon")]
+    //[Activity(Label = "CerberusAndroid", MainLauncher = true, Icon = "@drawable/icon")]
+
+
+    [Activity(Label = "CerberusAndroid")]
     public class LogInPage : Activity
     {
         /***********************************************************************
          *                          Variables
          * 
          * **********************************************************************/
-      //  private Button mBtnSignUpWithEmail;
-        private ProgressBar mProgressBar;
+//  private Button mBtnSignUpWithEmail;
+private ProgressBar mProgressBar;
         private Button mBtnLogIn;
         private TextView mForgotPassword;
 

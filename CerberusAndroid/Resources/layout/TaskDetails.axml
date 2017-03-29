@@ -33,9 +33,22 @@
         android:layout_below="@+id/NotesLabel"
         android:maxLines="1"
         android:imeOptions="actionDone" />
+    <TextView
+        android:id="@+id/EventName"
+        android:text="EventName:"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NotesText" />
+    <EditText
+        android:id="@+id/EventNameText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EventName"
+        android:maxLines="1"
+        android:imeOptions="actionDone" />
     <CheckBox
         android:id="@+id/chkDone"
-        android:layout_below="@+id/NotesText"
+        android:layout_below="@+id/EventNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Done" />

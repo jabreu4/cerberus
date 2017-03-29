@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.IO;
 using SQLite;
 using Android.App;
@@ -34,5 +34,5 @@ namespace CerberusAndroid
 		}
 	}
 }
-*/
+
 

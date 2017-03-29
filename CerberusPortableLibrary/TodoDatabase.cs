@@ -24,7 +24,7 @@ namespace Cerberus.PortableLibrary
 		/************************************************************************************/
 		static TodoDatabase instance = new TodoDatabase();
 
-		const string applicationURL = @"https://testingazurecerberus.azurewebsites.net";
+		const string applicationURL = @"https://cerberusadministrator.azurewebsites.net/";
 
 		private MobileServiceClient client;
 

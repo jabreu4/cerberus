@@ -94,10 +94,13 @@ namespace CerberusAndroid
 			public const int mail = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int ProgressBarStyle = 2130837514;
+			public const int playstoreIcon = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int RedButton = 2130837515;
+			public const int ProgressBarStyle = 2130837515;
+			
+			// aapt resource value: 0x7f02000c
+			public const int RedButton = 2130837516;
 			
 			static Drawable()
 			{
@@ -115,8 +118,14 @@ namespace CerberusAndroid
 			// aapt resource value: 0x7f08002a
 			public const int AddButton = 2131230762;
 			
-			// aapt resource value: 0x7f08003e
-			public const int CancelDeleteButton = 2131230782;
+			// aapt resource value: 0x7f080040
+			public const int CancelDeleteButton = 2131230784;
+			
+			// aapt resource value: 0x7f08003c
+			public const int EventName = 2131230780;
+			
+			// aapt resource value: 0x7f08003d
+			public const int EventNameText = 2131230781;
 			
 			// aapt resource value: 0x7f080038
 			public const int NameLabel = 2131230776;
@@ -130,8 +139,8 @@ namespace CerberusAndroid
 			// aapt resource value: 0x7f08003b
 			public const int NotesText = 2131230779;
 			
-			// aapt resource value: 0x7f08003d
-			public const int SaveButton = 2131230781;
+			// aapt resource value: 0x7f08003f
+			public const int SaveButton = 2131230783;
 			
 			// aapt resource value: 0x7f080037
 			public const int TaskDetailsHeader = 2131230775;
@@ -166,8 +175,8 @@ namespace CerberusAndroid
 			// aapt resource value: 0x7f080005
 			public const int btnSubmit = 2131230725;
 			
-			// aapt resource value: 0x7f08003c
-			public const int chkDone = 2131230780;
+			// aapt resource value: 0x7f08003e
+			public const int chkDone = 2131230782;
 			
 			// aapt resource value: 0x7f080011
 			public const int containerInbox = 2131230737;
@@ -223,8 +232,8 @@ namespace CerberusAndroid
 			// aapt resource value: 0x7f080026
 			public const int llContainer = 2131230758;
 			
-			// aapt resource value: 0x7f08003f
-			public const int lstItemTask = 2131230783;
+			// aapt resource value: 0x7f080041
+			public const int lstItemTask = 2131230785;
 			
 			// aapt resource value: 0x7f08001d
 			public const int pastEventsListView = 2131230749;
@@ -238,8 +247,8 @@ namespace CerberusAndroid
 			// aapt resource value: 0x7f080006
 			public const int sample_main_layout = 2131230726;
 			
-			// aapt resource value: 0x7f080040
-			public const int search = 2131230784;
+			// aapt resource value: 0x7f080042
+			public const int search = 2131230786;
 			
 			// aapt resource value: 0x7f080028
 			public const int sliding_tabs = 2131230760;

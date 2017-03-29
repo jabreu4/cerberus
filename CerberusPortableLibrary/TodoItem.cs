@@ -21,6 +21,8 @@ namespace Cerberus.PortableLibrary
 		public string Notes { get; set; }
 
 		public bool Done { get; set; }  // TODO: add this field to the user-interface
+
+        public string EventName { get; set; }
 	
 	}
 

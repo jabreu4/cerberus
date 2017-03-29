@@ -1,4 +1,4 @@
-/*using System.Collections.Generic;
+using System.Collections.Generic;
 using Android.App;
 using Android.Widget;
 using Cerberus.PortableLibrary;
@@ -61,7 +61,7 @@ namespace CerberusAndroid.ApplicationLayer
 					Android.Resource.Layout.SimpleListItemChecked,
 					parent,
 					false)) as CheckedTextView;
-			view.SetText (item.Name==""?"<new task>":item.Name, TextView.BufferType.Normal);
+			view.SetText (item.EventName==""?"<new task>":item.EventName, TextView.BufferType.Normal);
 			view.Checked = item.Done;
 
 
@@ -69,4 +69,4 @@ namespace CerberusAndroid.ApplicationLayer
 			return view;
 		}
 	}
-} */
+} 
